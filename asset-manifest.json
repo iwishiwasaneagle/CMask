@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/CMask/static/css/main.a3718f0b.chunk.css",
-    "main.js": "/CMask/static/js/main.13586c1b.chunk.js",
-    "main.js.map": "/CMask/static/js/main.13586c1b.chunk.js.map",
-    "runtime-main.js": "/CMask/static/js/runtime-main.a8509cc2.js",
-    "runtime-main.js.map": "/CMask/static/js/runtime-main.a8509cc2.js.map",
-    "static/js/2.5a217c50.chunk.js": "/CMask/static/js/2.5a217c50.chunk.js",
-    "static/js/2.5a217c50.chunk.js.map": "/CMask/static/js/2.5a217c50.chunk.js.map",
-    "static/js/3.85a24dd4.chunk.js": "/CMask/static/js/3.85a24dd4.chunk.js",
-    "static/js/3.85a24dd4.chunk.js.map": "/CMask/static/js/3.85a24dd4.chunk.js.map",
-    "index.html": "/CMask/index.html",
-    "static/css/main.a3718f0b.chunk.css.map": "/CMask/static/css/main.a3718f0b.chunk.css.map",
-    "static/js/2.5a217c50.chunk.js.LICENSE.txt": "/CMask/static/js/2.5a217c50.chunk.js.LICENSE.txt",
-    "static/media/logo.f51a88bf.svg": "/CMask/static/media/logo.f51a88bf.svg"
+    "main.css": "/www.boxofhope.co.uk/static/css/main.a3718f0b.chunk.css",
+    "main.js": "/www.boxofhope.co.uk/static/js/main.379f890d.chunk.js",
+    "main.js.map": "/www.boxofhope.co.uk/static/js/main.379f890d.chunk.js.map",
+    "runtime-main.js": "/www.boxofhope.co.uk/static/js/runtime-main.c5c62ed4.js",
+    "runtime-main.js.map": "/www.boxofhope.co.uk/static/js/runtime-main.c5c62ed4.js.map",
+    "static/js/2.5a217c50.chunk.js": "/www.boxofhope.co.uk/static/js/2.5a217c50.chunk.js",
+    "static/js/2.5a217c50.chunk.js.map": "/www.boxofhope.co.uk/static/js/2.5a217c50.chunk.js.map",
+    "static/js/3.85a24dd4.chunk.js": "/www.boxofhope.co.uk/static/js/3.85a24dd4.chunk.js",
+    "static/js/3.85a24dd4.chunk.js.map": "/www.boxofhope.co.uk/static/js/3.85a24dd4.chunk.js.map",
+    "index.html": "/www.boxofhope.co.uk/index.html",
+    "static/css/main.a3718f0b.chunk.css.map": "/www.boxofhope.co.uk/static/css/main.a3718f0b.chunk.css.map",
+    "static/js/2.5a217c50.chunk.js.LICENSE.txt": "/www.boxofhope.co.uk/static/js/2.5a217c50.chunk.js.LICENSE.txt",
+    "static/media/logo.f51a88bf.svg": "/www.boxofhope.co.uk/static/media/logo.f51a88bf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a8509cc2.js",
+    "static/js/runtime-main.c5c62ed4.js",
     "static/js/2.5a217c50.chunk.js",
     "static/css/main.a3718f0b.chunk.css",
-    "static/js/main.13586c1b.chunk.js"
+    "static/js/main.379f890d.chunk.js"
   ]
 }
