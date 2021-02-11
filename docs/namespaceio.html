@@ -62,7 +62,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">io Namespace Reference</div>  </div>
 </div><!--header-->
@@ -72,8 +73,131 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a04e14b6b14df2d7507012350ee41fd71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71">server_run</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a04e14b6b14df2d7507012350ee41fd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce99fbcddfb36220f64995a524819e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3">setup_io</a> ()</td></tr>
+<tr class="separator:a7ce99fbcddfb36220f64995a524819e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da6198e35f3bd6077e73521d07b1cdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd">door_switch_interrupt</a> (void)</td></tr>
+<tr class="separator:a4da6198e35f3bd6077e73521d07b1cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba69257c96185c3788a37ea2b043f00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a8ba69257c96185c3788a37ea2b043f00">is_user_home</a> (std::string ip)</td></tr>
+<tr class="separator:a8ba69257c96185c3788a37ea2b043f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1a5cbfde956a14d53edf731f93905cae"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a1a5cbfde956a14d53edf731f93905cae">isDoorOpen</a> = false</td></tr>
+<tr class="separator:a1a5cbfde956a14d53edf731f93905cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b6eea1cdc4b552450733c473a56094"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a59b6eea1cdc4b552450733c473a56094">isInterruptRunning</a> = false</td></tr>
+<tr class="separator:a59b6eea1cdc4b552450733c473a56094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295a6e0a036a1d4e4edf69a3bae7fc08"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a295a6e0a036a1d4e4edf69a3bae7fc08">debounceAvgCount</a> = 10</td></tr>
+<tr class="separator:a295a6e0a036a1d4e4edf69a3bae7fc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4980c1b72e6130e21f444421aebec4"><td class="memItemLeft" align="right" valign="top">unsigned const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a8c4980c1b72e6130e21f444421aebec4">debounceDelay</a> = 20</td></tr>
+<tr class="separator:a8c4980c1b72e6130e21f444421aebec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Handles the full life-cycle of the IO server.</p>
+<p>IO server namespace. Ensures that if the <a class="el" href="restful__server_8h.html">restful_server.h</a> is imported, the same-named functions/class/etc. don't interact. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a4da6198e35f3bd6077e73521d07b1cdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da6198e35f3bd6077e73521d07b1cdd">&#9670;&nbsp;</a></span>door_switch_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io::door_switch_interrupt </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Interrupt function for the door switch </p>
+<p>Debounce the switch by checking average input -&gt; low = 0, high = 1, so we need avg inp &gt; 0.5 to consider door closed</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceio_a4da6198e35f3bd6077e73521d07b1cdd_cgraph.png" border="0" usemap="#anamespaceio_a4da6198e35f3bd6077e73521d07b1cdd_cgraph" alt=""/></div>
+<map name="anamespaceio_a4da6198e35f3bd6077e73521d07b1cdd_cgraph" id="anamespaceio_a4da6198e35f3bd6077e73521d07b1cdd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,168,57"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#ae5e0a58cf493d89b6d644593ee0525db" title=" " alt="" coords="233,5,285,32"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#ae1e3d979645a535a8ce49f935392d8bc" title=" " alt="" coords="216,56,303,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceio_a4da6198e35f3bd6077e73521d07b1cdd_icgraph.png" border="0" usemap="#anamespaceio_a4da6198e35f3bd6077e73521d07b1cdd_icgraph" alt=""/></div>
+<map name="anamespaceio_a4da6198e35f3bd6077e73521d07b1cdd_icgraph" id="anamespaceio_a4da6198e35f3bd6077e73521d07b1cdd_icgraph">
+<area shape="rect" title=" " alt="" coords="385,5,548,32"/>
+<area shape="rect" href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3" title=" " alt="" coords="251,5,337,32"/>
+<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,5,203,32"/>
+<area shape="rect" href="boxofhope_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8ba69257c96185c3788a37ea2b043f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ba69257c96185c3788a37ea2b043f00">&#9670;&nbsp;</a></span>is_user_home()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io::is_user_home </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>ip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pings an ip address, if the ip is pingable it's deemed that the user is home </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ip</td><td>User's mobile phone IP address.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if the user is home, 1 if not.</dd></dl>
+<div class="fragment"><div class="line"><span class="comment">// Async call of the is_user_home functin on ip 192.168.0.65 a total of 10 times before exiting.</span></div>
+<div class="line"><span class="keywordtype">void</span> is_user_home_callback(<span class="keyword">const</span> boost::system::error_code&amp;, boost::asio::steady_timer* t, <span class="keywordtype">int</span>* count){</div>
+<div class="line">    <a class="code" href="namespaceio.html#a8ba69257c96185c3788a37ea2b043f00">io::is_user_home</a>(std::string(<span class="stringliteral">&quot;192.168.0.65&quot;</span>));</div>
+<div class="line">    <span class="keywordflow">if</span>(*count &lt; 10){</div>
+<div class="line">        *count++;</div>
+<div class="line">        t-&gt;expires_at(t-&gt;expiry() + boost::asio::chrono::seconds(1));</div>
+<div class="line">        t-&gt;async_wait(boost::bind(is_user_home_callback, boost::asio::placeholders::error, t, count));</div>
+<div class="line">    }</div>
+<div class="line"> }</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="boxofhope_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(){</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Start of the test function&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"> </div>
+<div class="line">    boost::asio::io_context <a class="code" href="namespaceio.html">io</a>;</div>
+<div class="line">    <span class="keywordtype">int</span> count = 0;</div>
+<div class="line">    boost::asio::steady_timer t(<a class="code" href="namespaceio.html">io</a>, boost::asio::chrono::seconds(5));</div>
+<div class="line">    t.async_wait(boost::bind(is_user_home_callback, boost::asio::placeholders::error, &amp;t, &amp;count));</div>
+<div class="line"> </div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;This is running whilst the asio timer is running!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="namespaceio.html">io</a>.run();</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aboxofhope_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="boxofhope_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> boxofhope.cpp:30</div></div>
+<div class="ttc" id="anamespaceio_html"><div class="ttname"><a href="namespaceio.html">io</a></div><div class="ttdef"><b>Definition:</b> io_server.h:19</div></div>
+<div class="ttc" id="anamespaceio_html_a8ba69257c96185c3788a37ea2b043f00"><div class="ttname"><a href="namespaceio.html#a8ba69257c96185c3788a37ea2b043f00">io::is_user_home</a></div><div class="ttdeci">int is_user_home(std::string ip)</div><div class="ttdef"><b>Definition:</b> io_server.cpp:58</div></div>
+</div><!-- fragment --> <div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceio_a8ba69257c96185c3788a37ea2b043f00_icgraph.png" border="0" usemap="#anamespaceio_a8ba69257c96185c3788a37ea2b043f00_icgraph" alt=""/></div>
+<map name="anamespaceio_a8ba69257c96185c3788a37ea2b043f00_icgraph" id="anamespaceio_a8ba69257c96185c3788a37ea2b043f00_icgraph">
+<area shape="rect" title=" " alt="" coords="203,5,321,32"/>
+<area shape="rect" href="boxofhope_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="104,5,155,32"/>
+<area shape="rect" href="boxofhope_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a04e14b6b14df2d7507012350ee41fd71"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04e14b6b14df2d7507012350ee41fd71">&#9670;&nbsp;</a></span>server_run()</h2>
 
@@ -99,6 +223,30 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Handles the full life-cycle of the IO server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Argument count </td></tr>
+    <tr><td class="paramname">argv</td><td>Arguments as a list of list of chars</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Exit code </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph.png" border="0" usemap="#anamespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph" alt=""/></div>
+<map name="anamespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph" id="anamespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,104,83"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#ae5e0a58cf493d89b6d644593ee0525db" title=" " alt="" coords="515,5,567,32"/>
+<area shape="rect" href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3" title=" " alt="" coords="152,107,239,133"/>
+<area shape="rect" href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd" title=" " alt="" coords="287,56,449,83"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#ac7bdb53335528ad073ca13eb2b1bdc00" title=" " alt="" coords="333,107,403,133"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#a2122b503fc31dcf493458f17202734ce" title=" " alt="" coords="323,157,413,184"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#a25277e2613bec7c9f9ca2f0e2643dbe2" title=" " alt="" coords="317,208,419,235"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#ae1e3d979645a535a8ce49f935392d8bc" title=" " alt="" coords="497,56,584,83"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -108,6 +256,109 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="boxofhope_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a7ce99fbcddfb36220f64995a524819e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce99fbcddfb36220f64995a524819e3">&#9670;&nbsp;</a></span>setup_io()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io::setup_io </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Setup the wiringPi pins and correct dataflow as well as interrupts </p><dl class="section return"><dt>Returns</dt><dd>Exit code </dd></dl>
+<p>WiringPi setup function</p>
+<p>Set door switch as input</p>
+<p>Setup door switch ISR on both rising and falling edge</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceio_a7ce99fbcddfb36220f64995a524819e3_cgraph.png" border="0" usemap="#anamespaceio_a7ce99fbcddfb36220f64995a524819e3_cgraph" alt=""/></div>
+<map name="anamespaceio_a7ce99fbcddfb36220f64995a524819e3_cgraph" id="anamespaceio_a7ce99fbcddfb36220f64995a524819e3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,107,92,133"/>
+<area shape="rect" href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd" title=" " alt="" coords="140,31,303,57"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#ac7bdb53335528ad073ca13eb2b1bdc00" title=" " alt="" coords="186,81,257,108"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#a2122b503fc31dcf493458f17202734ce" title=" " alt="" coords="176,132,267,159"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#a25277e2613bec7c9f9ca2f0e2643dbe2" title=" " alt="" coords="170,183,273,209"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#ae5e0a58cf493d89b6d644593ee0525db" title=" " alt="" coords="368,5,420,32"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#ae1e3d979645a535a8ce49f935392d8bc" title=" " alt="" coords="351,56,437,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceio_a7ce99fbcddfb36220f64995a524819e3_icgraph.png" border="0" usemap="#anamespaceio_a7ce99fbcddfb36220f64995a524819e3_icgraph" alt=""/></div>
+<map name="anamespaceio_a7ce99fbcddfb36220f64995a524819e3_icgraph" id="anamespaceio_a7ce99fbcddfb36220f64995a524819e3_icgraph">
+<area shape="rect" title=" " alt="" coords="251,5,337,32"/>
+<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,5,203,32"/>
+<area shape="rect" href="boxofhope_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a295a6e0a036a1d4e4edf69a3bae7fc08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295a6e0a036a1d4e4edf69a3bae7fc08">&#9670;&nbsp;</a></span>debounceAvgCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int io::debounceAvgCount = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c4980c1b72e6130e21f444421aebec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c4980c1b72e6130e21f444421aebec4">&#9670;&nbsp;</a></span>debounceDelay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned const int io::debounceDelay = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a5cbfde956a14d53edf731f93905cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a5cbfde956a14d53edf731f93905cae">&#9670;&nbsp;</a></span>isDoorOpen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool io::isDoorOpen = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59b6eea1cdc4b552450733c473a56094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b6eea1cdc4b552450733c473a56094">&#9670;&nbsp;</a></span>isInterruptRunning</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool io::isInterruptRunning = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

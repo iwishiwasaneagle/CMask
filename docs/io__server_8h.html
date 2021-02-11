@@ -67,19 +67,31 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">io_server.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &quot;<a class="el" href="wiringPi_8h_source.html">wiringPi.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for io_server.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="io__server_8h__incl.png" border="0" usemap="#aservers_2io__server_2io__server_8h" alt=""/></div>
 <map name="aservers_2io__server_2io__server_8h" id="aservers_2io__server_2io__server_8h">
-<area shape="rect" title=" " alt="" coords="5,5,141,47"/>
-<area shape="rect" title=" " alt="" coords="37,95,109,121"/>
+<area shape="rect" title=" " alt="" coords="141,5,277,47"/>
+<area shape="rect" title=" " alt="" coords="5,95,77,121"/>
+<area shape="rect" title=" " alt="" coords="102,95,157,121"/>
+<area shape="rect" title=" " alt="" coords="181,95,238,121"/>
+<area shape="rect" title=" " alt="" coords="263,95,313,121"/>
+<area shape="rect" href="wiringPi_8h.html" title=" " alt="" coords="338,95,417,121"/>
+<area shape="rect" title=" " alt="" coords="305,169,362,196"/>
+<area shape="rect" title=" " alt="" coords="387,169,453,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -100,11 +112,64 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html">io</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a9b867f6e21ec7a3bc0ea5bbebcdc26c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__server_8h.html#a9b867f6e21ec7a3bc0ea5bbebcdc26c1">DOOR_SWITCH_PIN_WP</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a9b867f6e21ec7a3bc0ea5bbebcdc26c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae038592f8329e68f9a3162116c7a89b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__server_8h.html#ae038592f8329e68f9a3162116c7a89b4">UVC_LED_PIN_WP</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:ae038592f8329e68f9a3162116c7a89b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a04e14b6b14df2d7507012350ee41fd71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71">io::server_run</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a04e14b6b14df2d7507012350ee41fd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce99fbcddfb36220f64995a524819e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3">io::setup_io</a> ()</td></tr>
+<tr class="separator:a7ce99fbcddfb36220f64995a524819e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da6198e35f3bd6077e73521d07b1cdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd">io::door_switch_interrupt</a> (void)</td></tr>
+<tr class="separator:a4da6198e35f3bd6077e73521d07b1cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba69257c96185c3788a37ea2b043f00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a8ba69257c96185c3788a37ea2b043f00">io::is_user_home</a> (std::string ip)</td></tr>
+<tr class="separator:a8ba69257c96185c3788a37ea2b043f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1a5cbfde956a14d53edf731f93905cae"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a1a5cbfde956a14d53edf731f93905cae">io::isDoorOpen</a> = false</td></tr>
+<tr class="separator:a1a5cbfde956a14d53edf731f93905cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b6eea1cdc4b552450733c473a56094"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a59b6eea1cdc4b552450733c473a56094">io::isInterruptRunning</a> = false</td></tr>
+<tr class="separator:a59b6eea1cdc4b552450733c473a56094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295a6e0a036a1d4e4edf69a3bae7fc08"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a295a6e0a036a1d4e4edf69a3bae7fc08">io::debounceAvgCount</a> = 10</td></tr>
+<tr class="separator:a295a6e0a036a1d4e4edf69a3bae7fc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4980c1b72e6130e21f444421aebec4"><td class="memItemLeft" align="right" valign="top">unsigned const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a8c4980c1b72e6130e21f444421aebec4">io::debounceDelay</a> = 20</td></tr>
+<tr class="separator:a8c4980c1b72e6130e21f444421aebec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a9b867f6e21ec7a3bc0ea5bbebcdc26c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b867f6e21ec7a3bc0ea5bbebcdc26c1">&#9670;&nbsp;</a></span>DOOR_SWITCH_PIN_WP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOOR_SWITCH_PIN_WP&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae038592f8329e68f9a3162116c7a89b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae038592f8329e68f9a3162116c7a89b4">&#9670;&nbsp;</a></span>UVC_LED_PIN_WP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UVC_LED_PIN_WP&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

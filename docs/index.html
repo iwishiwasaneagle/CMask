@@ -72,7 +72,9 @@ $(function() {
 </div><div align="center"> </div><div align="center"> Event driven COVID-19 safety <br  />
  <a href="https://boxofhope.co.uk/docs/index.html"><b>Explore the docs »</b></a> <br  />
  <br  />
- <a href="https://www.boxofhope.co.uk">View Demo</a> · <a href="https://github.com/iwishiwasaneagle/boxofhope/issues/new?assignees=&amp;labels=&amp;template=bug_report.md&amp;title=">Report Bug</a> · <a href="https://github.com/iwishiwasaneagle/boxofhope/issues/new?assignees=&amp;labels=&amp;template=feature_request.md&amp;title=">Request Feature</a> </div><div align="center"> </div> <div align="center"></div><div align="center"><a href="https://github.com/iwishiwasaneagle/boxofhope/graphs/contributors"><img src="https://img.shields.io/github/contributors/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Contributors" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/network/members"><img src="https://img.shields.io/github/forks/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Forks" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/stargazers"><img src="https://img.shields.io/github/stars/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Stars" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/issues"><img src="https://img.shields.io/github/issues/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Issues" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="License" style="pointer-events: none;" class="inline"/></a> </div> <div align="center"></div><div align="center"><img src="https://github.com/iwishiwasaneagle/boxofhope/workflows/Servers/badge.svg" alt="Servers" style="pointer-events: none;" class="inline"/> <img src="https://github.com/iwishiwasaneagle/boxofhope/workflows/Docs/badge.svg" alt="Docs" style="pointer-events: none;" class="inline"/> </div><p> <br  />
+ <a href="https://www.youtube.com/channel/UCG8txVUxQb3aCut7adeDU7A"><img src="images/youtube.svg" alt="" style="pointer-events: none;" height="40" class="inline"/></a>&#160;&#160;&#160;&#160; <a href="https://www.facebook.com/Box-of-Hope-106011608167716"><img src="images/facebook.svg" alt="" style="pointer-events: none;" height="40" class="inline"/></a>&#160;&#160;&#160;&#160; <a href="https://twitter.com/theboxofhope"><img src="images/twitter.svg" alt="" style="pointer-events: none;" height="40" class="inline"/></a>&#160;&#160;&#160;&#160; <a href="https://www.instagram.com/theboxofhope"><img src="images/instagram.svg" alt="" style="pointer-events: none;" height="40" class="inline"/></a>&#160;&#160;&#160;&#160; <a href="https://www.linkedin.com/company/theboxofhope"><img src="images/linkedin.svg" alt="" style="pointer-events: none;" height="40" class="inline"/></a>&#160;&#160;&#160;&#160; <br  />
+ <br  />
+ <a href="https://www.boxofhope.co.uk">View Demo</a> · <a href="https://github.com/iwishiwasaneagle/boxofhope/issues/new?assignees=&amp;labels=&amp;template=bug_report.md&amp;title=">Report Bug</a> · <a href="https://github.com/iwishiwasaneagle/boxofhope/issues/new?assignees=&amp;labels=&amp;template=feature_request.md&amp;title=">Request Feature</a> </div><div align="center"> </div> <div align="center"></div><div align="center"><a href="https://github.com/iwishiwasaneagle/boxofhope/graphs/contributors"><img src="https://img.shields.io/github/contributors/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Contributors" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/network/members"><img src="https://img.shields.io/github/forks/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Forks" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/stargazers"><img src="https://img.shields.io/github/stars/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Stars" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/issues"><img src="https://img.shields.io/github/issues/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Issues" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/blob/main/LICENSE"><img src="https://img.shields.io/github/license/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="License" style="pointer-events: none;" class="inline"/></a> </div> <div align="center"></div><div align="center"><img src="https://github.com/iwishiwasaneagle/boxofhope/workflows/Servers/badge.svg" alt="Servers" style="pointer-events: none;" class="inline"/> <img src="https://github.com/iwishiwasaneagle/boxofhope/workflows/Docs/badge.svg" alt="Docs" style="pointer-events: none;" class="inline"/> </div><p> <br  />
 </p>
 <h2><a class="anchor" id="autotoc_md0"></a>
 Table of contents</h2>
@@ -106,19 +108,21 @@ Getting Started</h2>
 <p>First, the project needs to be built. Run the following to build the project.</p>
 <div class="fragment"><div class="line">git clone https://github.com/iwishiwasaneagle/boxofhope</div>
 <div class="line">cd serves</div>
+<div class="line">sudo apt-get install gcc cmake libboost-all-dev # For ubuntu, use whatever package manager your system needs.</div>
 <div class="line">cmake .</div>
 <div class="line">make</div>
 </div><!-- fragment --><p>The <code>Boxofhope</code> binary will be located in the automatically generated <code>build</code> folder.</p>
-<p>To use either of the three servers, invoke the binary with <code>--sql-server</code>, <code>--io-server</code>, <code>--restful-server</code> along with the desired server specific configurations.</p>
+<p>To use either of the two servers, invoke the binary with <code>--io-server</code>, <code>--restful-server</code> along with the desired server specific configurations. Use <code>-t</code> to run the tests.</p>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Usage</h2>
 <div class="fragment"><div class="line">(boxofhope/servers) $ ./build/Boxofhope</div>
 <div class="line">Welcome to Boxofhope (v0.0.1)</div>
 <div class="line"> </div>
 <div class="line">Usage:</div>
-<div class="line">   --sql-server       Start the SQL server instance</div>
-<div class="line">   --restful-server   Start the RESTful server instance</div>
-<div class="line">   --io-server        Start the IO server instance</div>
+<div class="line">   -r,--restful-server   Start the RESTful server instance</div>
+<div class="line">   -i,--io-server        Start the IO server instance</div>
+<div class="line">   -h,--help             Print this message</div>
+<div class="line">   -t                    Run tests</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
 Roadmap</h2>
 <p>See the <a href="https://github.com/iwishiwasaneagle/boxofhope/issues?q=is%3Aopen+is%3Aissue+label%3Afeature">open issues</a> for a list of proposed features (and known issues).</p>

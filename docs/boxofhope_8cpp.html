@@ -74,6 +74,10 @@ $(function() {
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;getopt.h&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;boost/asio.hpp&gt;</code><br />
+<code>#include &lt;boost/bind/bind.hpp&gt;</code><br />
 <code>#include &quot;boxofhopeConfig.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="io__server_8h_source.html">io_server.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="restful__server_8h_source.html">restful_server.h</a>&quot;</code><br />
@@ -83,14 +87,21 @@ Include dependency graph for boxofhope.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="boxofhope_8cpp__incl.png" border="0" usemap="#aservers_2boxofhope_8cpp" alt=""/></div>
 <map name="aservers_2boxofhope_8cpp" id="aservers_2boxofhope_8cpp">
-<area shape="rect" title=" " alt="" coords="188,5,340,32"/>
-<area shape="rect" title=" " alt="" coords="420,155,492,181"/>
-<area shape="rect" title=" " alt="" coords="30,80,85,107"/>
-<area shape="rect" title=" " alt="" coords="109,80,177,107"/>
-<area shape="rect" title=" " alt="" coords="201,80,328,107"/>
-<area shape="rect" href="io__server_8h.html" title=" " alt="" coords="352,80,438,107"/>
-<area shape="rect" href="restful__server_8h.html" title=" " alt="" coords="462,80,573,107"/>
-<area shape="rect" href="sqllib_8h.html" title=" " alt="" coords="597,80,660,107"/>
+<area shape="rect" title=" " alt="" coords="344,5,496,32"/>
+<area shape="rect" title=" " alt="" coords="79,155,151,181"/>
+<area shape="rect" title=" " alt="" coords="210,155,265,181"/>
+<area shape="rect" title=" " alt="" coords="509,80,577,107"/>
+<area shape="rect" title=" " alt="" coords="392,155,449,181"/>
+<area shape="rect" title=" " alt="" coords="474,155,524,181"/>
+<area shape="rect" title=" " alt="" coords="602,80,708,107"/>
+<area shape="rect" title=" " alt="" coords="733,80,868,107"/>
+<area shape="rect" title=" " alt="" coords="892,80,1018,107"/>
+<area shape="rect" href="io__server_8h.html" title=" " alt="" coords="298,80,383,107"/>
+<area shape="rect" href="restful__server_8h.html" title=" " alt="" coords="25,80,136,107"/>
+<area shape="rect" href="sqllib_8h.html" title=" " alt="" coords="160,80,222,107"/>
+<area shape="rect" href="wiringPi_8h.html" title=" " alt="" coords="289,155,368,181"/>
+<area shape="rect" title=" " alt="" coords="257,229,314,256"/>
+<area shape="rect" title=" " alt="" coords="339,229,406,256"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -98,6 +109,9 @@ Include dependency graph for boxofhope.cpp:</div>
 Functions</h2></td></tr>
 <tr class="memitem:a0040b31a2648820e75882b52c2790efa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boxofhope_8cpp.html#a0040b31a2648820e75882b52c2790efa">tests</a> ()</td></tr>
 <tr class="separator:a0040b31a2648820e75882b52c2790efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bf8646c074be1959943f73bd7458c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boxofhope_8cpp.html#a78bf8646c074be1959943f73bd7458c0">show_usage</a> ()</td></tr>
+<tr class="memdesc:a78bf8646c074be1959943f73bd7458c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print CLI usage for main.  <a href="boxofhope_8cpp.html#a78bf8646c074be1959943f73bd7458c0">More...</a><br /></td></tr>
+<tr class="separator:a78bf8646c074be1959943f73bd7458c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boxofhope_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -132,11 +146,47 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="boxofhope_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.png" border="0" usemap="#aboxofhope_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph" alt=""/></div>
 <map name="aboxofhope_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph" id="aboxofhope_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,56,83"/>
-<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="117,5,216,32"/>
-<area shape="rect" href="namespacerestful.html#abcc05fdb0462abbd0290ef26d13e9f74" title=" " alt="" coords="104,56,229,83"/>
-<area shape="rect" href="boxofhope_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="141,107,192,133"/>
-<area shape="rect" href="namespacesqllib.html#a4e519066052a5530e43cb374c436afd4" title=" " alt="" coords="277,107,357,133"/>
+<area shape="rect" title=" " alt="" coords="5,132,56,159"/>
+<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="117,56,216,83"/>
+<area shape="rect" href="namespacerestful.html#abcc05fdb0462abbd0290ef26d13e9f74" title=" " alt="" coords="104,107,229,133"/>
+<area shape="rect" href="boxofhope_8cpp.html#a78bf8646c074be1959943f73bd7458c0" title="Print CLI usage for main." alt="" coords="119,157,214,184"/>
+<area shape="rect" href="boxofhope_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="141,208,192,235"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#ae5e0a58cf493d89b6d644593ee0525db" title=" " alt="" coords="672,5,724,32"/>
+<area shape="rect" href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3" title=" " alt="" coords="293,107,380,133"/>
+<area shape="rect" href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd" title=" " alt="" coords="444,56,607,83"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#ac7bdb53335528ad073ca13eb2b1bdc00" title=" " alt="" coords="490,107,561,133"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#a2122b503fc31dcf493458f17202734ce" title=" " alt="" coords="480,157,571,184"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#a25277e2613bec7c9f9ca2f0e2643dbe2" title=" " alt="" coords="474,208,577,235"/>
+<area shape="rect" href="wiringPi-mock_8cpp.html#ae1e3d979645a535a8ce49f935392d8bc" title=" " alt="" coords="655,56,741,83"/>
+<area shape="rect" href="namespaceio.html#a8ba69257c96185c3788a37ea2b043f00" title=" " alt="" coords="277,208,396,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a78bf8646c074be1959943f73bd7458c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bf8646c074be1959943f73bd7458c0">&#9670;&nbsp;</a></span>show_usage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void show_usage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print CLI usage for main. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="boxofhope_8cpp_a78bf8646c074be1959943f73bd7458c0_icgraph.png" border="0" usemap="#aboxofhope_8cpp_a78bf8646c074be1959943f73bd7458c0_icgraph" alt=""/></div>
+<map name="aboxofhope_8cpp_a78bf8646c074be1959943f73bd7458c0_icgraph" id="aboxofhope_8cpp_a78bf8646c074be1959943f73bd7458c0_icgraph">
+<area shape="rect" title="Print CLI usage for main." alt="" coords="104,5,199,32"/>
+<area shape="rect" href="boxofhope_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
 </map>
 </div>
 
@@ -156,13 +206,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Test function to serve as an example until the team is more up to speed with C++, Doxygen, etc.</p>
+<dl class="section return"><dt>Returns</dt><dd>Exit code </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="boxofhope_8cpp_a0040b31a2648820e75882b52c2790efa_cgraph.png" border="0" usemap="#aboxofhope_8cpp_a0040b31a2648820e75882b52c2790efa_cgraph" alt=""/></div>
 <map name="aboxofhope_8cpp_a0040b31a2648820e75882b52c2790efa_cgraph" id="aboxofhope_8cpp_a0040b31a2648820e75882b52c2790efa_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,56,32"/>
-<area shape="rect" href="namespacesqllib.html#a4e519066052a5530e43cb374c436afd4" title=" " alt="" coords="104,5,184,32"/>
+<area shape="rect" href="namespaceio.html#a8ba69257c96185c3788a37ea2b043f00" title=" " alt="" coords="104,5,223,32"/>
 </map>
 </div>
 <div class="dynheader">

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['server_5frun_27',['server_run',['../namespaceio.html#a04e14b6b14df2d7507012350ee41fd71',1,'io::server_run()'],['../namespacerestful.html#abcc05fdb0462abbd0290ef26d13e9f74',1,'restful::server_run()']]]
+  ['is_5fuser_5fhome_62',['is_user_home',['../namespaceio.html#a8ba69257c96185c3788a37ea2b043f00',1,'io']]]
 ];
