@@ -1,6 +1,0 @@
-<map id="servers/io_server" name="servers/io_server">
-<area shape="rect" id="node1" href="dir_0b349e9ec9c132fc08e70a8c7c82ca07.html" title="wiringPi&#45;mock" alt="" coords="27,148,131,196"/>
-<area shape="rect" id="node2" href="dir_df0c0c8cc6934b4bb45b8d66da5f846b.html" title="io_server" alt="" coords="41,52,116,100"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000001_000004.html" title="1" alt="" coords="83,122,91,137"/>
-<area shape="rect" id="clust1" href="dir_b4b28185343f1bd39ef36cc61036dc66.html" title="servers" alt="" coords="16,16,141,207"/>
-</map>

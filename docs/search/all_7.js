@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pinmode_22',['pinMode',['../wiringPi-mock_8cpp.html#ac7bdb53335528ad073ca13eb2b1bdc00',1,'pinMode(int pin, int mode):&#160;wiringPi-mock.cpp'],['../wiringPi_8h.html#ac7bdb53335528ad073ca13eb2b1bdc00',1,'pinMode(int pin, int mode):&#160;wiringPi-mock.cpp']]]
+  ['tests_25',['tests',['../boxofhope_8cpp.html#a0040b31a2648820e75882b52c2790efa',1,'boxofhope.cpp']]]
 ];

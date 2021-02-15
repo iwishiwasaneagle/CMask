@@ -1,10 +1,5 @@
 <map id="io::server_run" name="io::server_run">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,104,83"/>
-<area shape="rect" id="node2" href="$wiringPi-mock_8cpp.html#ae5e0a58cf493d89b6d644593ee0525db" title=" " alt="" coords="515,5,567,32"/>
-<area shape="rect" id="node3" href="$namespaceio.html#a7ce99fbcddfb36220f64995a524819e3" title=" " alt="" coords="152,107,239,133"/>
-<area shape="rect" id="node4" href="$namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd" title=" " alt="" coords="287,56,449,83"/>
-<area shape="rect" id="node6" href="$wiringPi-mock_8cpp.html#ac7bdb53335528ad073ca13eb2b1bdc00" title=" " alt="" coords="333,107,403,133"/>
-<area shape="rect" id="node7" href="$wiringPi-mock_8cpp.html#a2122b503fc31dcf493458f17202734ce" title=" " alt="" coords="323,157,413,184"/>
-<area shape="rect" id="node8" href="$wiringPi-mock_8cpp.html#a25277e2613bec7c9f9ca2f0e2643dbe2" title=" " alt="" coords="317,208,419,235"/>
-<area shape="rect" id="node5" href="$wiringPi-mock_8cpp.html#ae1e3d979645a535a8ce49f935392d8bc" title=" " alt="" coords="497,56,584,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node2" href="$namespaceio.html#a7ce99fbcddfb36220f64995a524819e3" title=" " alt="" coords="152,5,239,32"/>
+<area shape="rect" id="node3" href="$namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd" title=" " alt="" coords="287,5,449,32"/>
 </map>

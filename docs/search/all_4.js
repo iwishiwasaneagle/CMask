@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['low_19',['LOW',['../wiringPi_8h.html#ab811d8c6ff3a505312d3276590444289',1,'wiringPi.h']]]
+  ['nfc_5frunnable_14',['NFC_Runnable',['../classio_1_1NFC__Runnable.html',1,'io::NFC_Runnable'],['../classio_1_1NFC__Runnable.html#a5662ef9c9528e190233855400c314b1b',1,'io::NFC_Runnable::NFC_Runnable()']]]
 ];

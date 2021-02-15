@@ -105,11 +105,14 @@ About The Project</h2>
 <h2><a class="anchor" id="autotoc_md2"></a>
 Getting Started</h2>
 <p>There are 3 servers as part of the <a href="./servers"><code>servers</code></a> folder: sql, io, restful.</p>
-<p>First, the project needs to be built. Run the following to build the project.</p>
-<div class="fragment"><div class="line">git clone https://github.com/iwishiwasaneagle/boxofhope</div>
-<div class="line">cd serves</div>
-<div class="line">sudo apt-get install gcc cmake libboost-all-dev # For ubuntu, use whatever package manager your system needs.</div>
-<div class="line">cmake .</div>
+<p>The <code>wiringPi</code> dependecy only runs on Raspberry Pi, therefore if you're building this on a non-RPi platform, please install <a href="https://github.com/iwishiwasaneagle/wiringPi-mock">wiringPi-sim</a>. Otherwise run <code>sudo apt-get install wiringPi</code>.</p>
+<div class="fragment"><div class="line">sudo apt-get install gcc cmake libboost-all-dev libnfc-dev # For ubuntu, use whatever package manager your system needs.</div>
+<div class="line"> </div>
+<div class="line"># Box of Hope</div>
+<div class="line">git clone https://github.com/iwishiwasaneagle/boxofhope</div>
+<div class="line">mkdir servers/build</div>
+<div class="line">cd serves/build</div>
+<div class="line">cmake ..</div>
 <div class="line">make</div>
 </div><!-- fragment --><p>The <code>Boxofhope</code> binary will be located in the automatically generated <code>build</code> folder.</p>
 <p>To use either of the two servers, invoke the binary with <code>--io-server</code>, <code>--restful-server</code> along with the desired server specific configurations. Use <code>-t</code> to run the tests.</p>

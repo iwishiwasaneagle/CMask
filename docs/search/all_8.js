@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['readme_2emd_23',['README.md',['../README_8md.html',1,'']]],
-  ['restful_24',['restful',['../namespacerestful.html',1,'']]],
-  ['restful_5fserver_2ecpp_25',['restful_server.cpp',['../restful__server_8cpp.html',1,'']]],
-  ['restful_5fserver_2eh_26',['restful_server.h',['../restful__server_8h.html',1,'']]]
+  ['uvc_5fled_5fpin_5fwp_26',['UVC_LED_PIN_WP',['../io__server_8h.html#ae038592f8329e68f9a3162116c7a89b4',1,'io_server.h']]]
 ];

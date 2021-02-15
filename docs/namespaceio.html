@@ -62,6 +62,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -69,6 +70,11 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1NFC__Runnable.html">NFC_Runnable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a04e14b6b14df2d7507012350ee41fd71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71">server_run</a> (int argc, char *argv[])</td></tr>
@@ -92,7 +98,7 @@ Variables</h2></td></tr>
 <tr class="separator:a8c4980c1b72e6130e21f444421aebec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Handles the full life-cycle of the IO server.</p>
+<div class="textblock"><p>Encloses the full life-cycle of the IO server.</p>
 <p>IO server namespace. Ensures that if the <a class="el" href="restful__server_8h.html">restful_server.h</a> is imported, the same-named functions/class/etc. don't interact. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a4da6198e35f3bd6077e73521d07b1cdd"></a>
@@ -112,16 +118,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Interrupt function for the door switch </p>
 <p>Debounce the switch by checking average input -&gt; low = 0, high = 1, so we need avg inp &gt; 0.5 to consider door closed</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespaceio_a4da6198e35f3bd6077e73521d07b1cdd_cgraph.png" border="0" usemap="#anamespaceio_a4da6198e35f3bd6077e73521d07b1cdd_cgraph" alt=""/></div>
-<map name="anamespaceio_a4da6198e35f3bd6077e73521d07b1cdd_cgraph" id="anamespaceio_a4da6198e35f3bd6077e73521d07b1cdd_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,168,57"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#ae5e0a58cf493d89b6d644593ee0525db" title=" " alt="" coords="233,5,285,32"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#ae1e3d979645a535a8ce49f935392d8bc" title=" " alt="" coords="216,56,303,83"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -183,8 +179,8 @@ Here is the caller graph for this function:</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="aboxofhope_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="boxofhope_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> boxofhope.cpp:30</div></div>
-<div class="ttc" id="anamespaceio_html"><div class="ttname"><a href="namespaceio.html">io</a></div><div class="ttdef"><b>Definition:</b> io_server.h:19</div></div>
-<div class="ttc" id="anamespaceio_html_a8ba69257c96185c3788a37ea2b043f00"><div class="ttname"><a href="namespaceio.html#a8ba69257c96185c3788a37ea2b043f00">io::is_user_home</a></div><div class="ttdeci">int is_user_home(std::string ip)</div><div class="ttdef"><b>Definition:</b> io_server.cpp:58</div></div>
+<div class="ttc" id="anamespaceio_html"><div class="ttname"><a href="namespaceio.html">io</a></div><div class="ttdef"><b>Definition:</b> io_nfc.h:12</div></div>
+<div class="ttc" id="anamespaceio_html_a8ba69257c96185c3788a37ea2b043f00"><div class="ttname"><a href="namespaceio.html#a8ba69257c96185c3788a37ea2b043f00">io::is_user_home</a></div><div class="ttdeci">int is_user_home(std::string ip)</div><div class="ttdef"><b>Definition:</b> io_server.cpp:59</div></div>
 </div><!-- fragment --> <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -237,14 +233,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph.png" border="0" usemap="#anamespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph" alt=""/></div>
 <map name="anamespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph" id="anamespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,104,83"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#ae5e0a58cf493d89b6d644593ee0525db" title=" " alt="" coords="515,5,567,32"/>
-<area shape="rect" href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3" title=" " alt="" coords="152,107,239,133"/>
-<area shape="rect" href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd" title=" " alt="" coords="287,56,449,83"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#ac7bdb53335528ad073ca13eb2b1bdc00" title=" " alt="" coords="333,107,403,133"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#a2122b503fc31dcf493458f17202734ce" title=" " alt="" coords="323,157,413,184"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#a25277e2613bec7c9f9ca2f0e2643dbe2" title=" " alt="" coords="317,208,419,235"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#ae1e3d979645a535a8ce49f935392d8bc" title=" " alt="" coords="497,56,584,83"/>
+<area shape="rect" title=" " alt="" coords="5,5,104,32"/>
+<area shape="rect" href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3" title=" " alt="" coords="152,5,239,32"/>
+<area shape="rect" href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd" title=" " alt="" coords="287,5,449,32"/>
 </map>
 </div>
 <div class="dynheader">
@@ -283,13 +274,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceio_a7ce99fbcddfb36220f64995a524819e3_cgraph.png" border="0" usemap="#anamespaceio_a7ce99fbcddfb36220f64995a524819e3_cgraph" alt=""/></div>
 <map name="anamespaceio_a7ce99fbcddfb36220f64995a524819e3_cgraph" id="anamespaceio_a7ce99fbcddfb36220f64995a524819e3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,107,92,133"/>
-<area shape="rect" href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd" title=" " alt="" coords="140,31,303,57"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#ac7bdb53335528ad073ca13eb2b1bdc00" title=" " alt="" coords="186,81,257,108"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#a2122b503fc31dcf493458f17202734ce" title=" " alt="" coords="176,132,267,159"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#a25277e2613bec7c9f9ca2f0e2643dbe2" title=" " alt="" coords="170,183,273,209"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#ae5e0a58cf493d89b6d644593ee0525db" title=" " alt="" coords="368,5,420,32"/>
-<area shape="rect" href="wiringPi-mock_8cpp.html#ae1e3d979645a535a8ce49f935392d8bc" title=" " alt="" coords="351,56,437,83"/>
+<area shape="rect" title=" " alt="" coords="5,5,92,32"/>
+<area shape="rect" href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd" title=" " alt="" coords="140,5,303,32"/>
 </map>
 </div>
 <div class="dynheader">
