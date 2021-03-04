@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['debounceavgcount_53',['debounceAvgCount',['../namespaceio.html#a295a6e0a036a1d4e4edf69a3bae7fc08',1,'io']]],
-  ['debouncedelay_54',['debounceDelay',['../namespaceio.html#a8c4980c1b72e6130e21f444421aebec4',1,'io']]]
+  ['context_92',['context',['../classio_1_1NFC__Runnable.html#ada806c25451c5753fe865ff2fd80cd57',1,'io::NFC_Runnable']]]
 ];

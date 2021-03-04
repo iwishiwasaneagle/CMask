@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Boxofhope: servers/io_server/io_server.h Source File</title>
+<title>Boxofhope: io_server/include/io_server/io_server.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('io__server_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_b4b28185343f1bd39ef36cc61036dc66.html">servers</a></li><li class="navelem"><a class="el" href="dir_df0c0c8cc6934b4bb45b8d66da5f846b.html">io_server</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">io_server.h</div>  </div>
@@ -82,8 +98,8 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;wiringPi.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__nfc_8h.html">io_nfc.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__nfc_8h.html">io_nfc.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__home_8h.html">io_home.h</a>&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceio.html">io</a>{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
@@ -93,29 +109,24 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd">door_switch_interrupt</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="namespaceio.html#a1a5cbfde956a14d53edf731f93905cae">   44</a></span>&#160;    <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceio.html#a1a5cbfde956a14d53edf731f93905cae">isDoorOpen</a> = <span class="keyword">false</span>; <span class="comment">//&lt; Door open or closed boolean variable. Edited by door_switch_interrupt.</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespaceio.html#a59b6eea1cdc4b552450733c473a56094">   45</a></span>&#160;    <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceio.html#a59b6eea1cdc4b552450733c473a56094">isInterruptRunning</a> = <span class="keyword">false</span>; <span class="comment">//&lt; Is the interrupt running? Prevents multiple interrupts from running due to bounce. </span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="namespaceio.html#a295a6e0a036a1d4e4edf69a3bae7fc08">   46</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="namespaceio.html#a295a6e0a036a1d4e4edf69a3bae7fc08">debounceAvgCount</a> = 10; <span class="comment">//&lt; The amount of times to sample the door before making a decision on the state.</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespaceio.html#a8c4980c1b72e6130e21f444421aebec4">   47</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="namespaceio.html#a8c4980c1b72e6130e21f444421aebec4">debounceDelay</a> = 20; <span class="comment">//&lt; The time between samples. Increase if the output flickers.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="namespaceio.html#a8ba69257c96185c3788a37ea2b043f00">is_user_home</a>(std::string ip);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// int is_user_home(std::string ip);</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aio__home_8h_html"><div class="ttname"><a href="io__home_8h.html">io_home.h</a></div></div>
 <div class="ttc" id="aio__nfc_8h_html"><div class="ttname"><a href="io__nfc_8h.html">io_nfc.h</a></div></div>
-<div class="ttc" id="anamespaceio_html"><div class="ttname"><a href="namespaceio.html">io</a></div><div class="ttdef"><b>Definition:</b> io_nfc.h:12</div></div>
-<div class="ttc" id="anamespaceio_html_a04e14b6b14df2d7507012350ee41fd71"><div class="ttname"><a href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71">io::server_run</a></div><div class="ttdeci">int server_run(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> io_server.cpp:3</div></div>
-<div class="ttc" id="anamespaceio_html_a1a5cbfde956a14d53edf731f93905cae"><div class="ttname"><a href="namespaceio.html#a1a5cbfde956a14d53edf731f93905cae">io::isDoorOpen</a></div><div class="ttdeci">volatile bool isDoorOpen</div><div class="ttdef"><b>Definition:</b> io_server.h:44</div></div>
-<div class="ttc" id="anamespaceio_html_a295a6e0a036a1d4e4edf69a3bae7fc08"><div class="ttname"><a href="namespaceio.html#a295a6e0a036a1d4e4edf69a3bae7fc08">io::debounceAvgCount</a></div><div class="ttdeci">const int debounceAvgCount</div><div class="ttdef"><b>Definition:</b> io_server.h:46</div></div>
-<div class="ttc" id="anamespaceio_html_a4da6198e35f3bd6077e73521d07b1cdd"><div class="ttname"><a href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd">io::door_switch_interrupt</a></div><div class="ttdeci">void door_switch_interrupt(void)</div><div class="ttdef"><b>Definition:</b> io_server.cpp:36</div></div>
-<div class="ttc" id="anamespaceio_html_a59b6eea1cdc4b552450733c473a56094"><div class="ttname"><a href="namespaceio.html#a59b6eea1cdc4b552450733c473a56094">io::isInterruptRunning</a></div><div class="ttdeci">volatile bool isInterruptRunning</div><div class="ttdef"><b>Definition:</b> io_server.h:45</div></div>
-<div class="ttc" id="anamespaceio_html_a7ce99fbcddfb36220f64995a524819e3"><div class="ttname"><a href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3">io::setup_io</a></div><div class="ttdeci">int setup_io()</div><div class="ttdef"><b>Definition:</b> io_server.cpp:22</div></div>
-<div class="ttc" id="anamespaceio_html_a8ba69257c96185c3788a37ea2b043f00"><div class="ttname"><a href="namespaceio.html#a8ba69257c96185c3788a37ea2b043f00">io::is_user_home</a></div><div class="ttdeci">int is_user_home(std::string ip)</div><div class="ttdef"><b>Definition:</b> io_server.cpp:59</div></div>
-<div class="ttc" id="anamespaceio_html_a8c4980c1b72e6130e21f444421aebec4"><div class="ttname"><a href="namespaceio.html#a8c4980c1b72e6130e21f444421aebec4">io::debounceDelay</a></div><div class="ttdeci">unsigned const int debounceDelay</div><div class="ttdef"><b>Definition:</b> io_server.h:47</div></div>
+<div class="ttc" id="anamespaceio_html"><div class="ttname"><a href="namespaceio.html">io</a></div><div class="ttdef"><b>Definition:</b> io_home.h:11</div></div>
+<div class="ttc" id="anamespaceio_html_a04e14b6b14df2d7507012350ee41fd71"><div class="ttname"><a href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71">io::server_run</a></div><div class="ttdeci">int server_run(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> io_server.cpp:5</div></div>
+<div class="ttc" id="anamespaceio_html_a4da6198e35f3bd6077e73521d07b1cdd"><div class="ttname"><a href="namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd">io::door_switch_interrupt</a></div><div class="ttdeci">void door_switch_interrupt(void)</div><div class="ttdef"><b>Definition:</b> io_door.cpp:8</div></div>
+<div class="ttc" id="anamespaceio_html_a7ce99fbcddfb36220f64995a524819e3"><div class="ttname"><a href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3">io::setup_io</a></div><div class="ttdeci">int setup_io()</div><div class="ttdef"><b>Definition:</b> io_server.cpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_1b5feb74e8ef0cfbbf521c4561a1aa0d.html">io_server</a></li><li class="navelem"><a class="el" href="dir_72b4fcb8da4116306b4feabcdbe6b2f7.html">include</a></li><li class="navelem"><a class="el" href="dir_7ad283c8fab714e24db1a62f1f43f19a.html">io_server</a></li><li class="navelem"><a class="el" href="io__server_8h.html">io_server.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

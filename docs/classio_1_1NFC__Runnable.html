@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classio_1_1NFC__Runnable.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,14 +80,10 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceio.html">io</a></li><li class="navelem"><a class="el" href="classio_1_1NFC__Runnable.html">NFC_Runnable</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">io::NFC_Runnable Class Reference</div>  </div>
 </div><!--header-->
@@ -78,7 +95,12 @@ Collaboration diagram for io::NFC_Runnable:</div>
 <div class="dyncontent">
 <div class="center"><img src="classio_1_1NFC__Runnable__coll__graph.png" border="0" usemap="#aio_1_1NFC__Runnable_coll__map" alt="Collaboration graph"/></div>
 <map name="aio_1_1NFC__Runnable_coll__map" id="aio_1_1NFC__Runnable_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,141,112"/>
+<area shape="rect" title=" " alt="" coords="220,160,356,267"/>
+<area shape="rect" title=" " alt="" coords="5,5,96,83"/>
+<area shape="rect" title=" " alt="" coords="121,5,217,83"/>
+<area shape="rect" title=" " alt="" coords="241,5,335,83"/>
+<area shape="rect" title=" " alt="" coords="359,5,505,83"/>
+<area shape="rect" title=" " alt="" coords="529,5,626,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -90,6 +112,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab26094ed97ab414f8734c44bdfb2cf8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77164638cf62646ed5a9a052f7e6588f"><td class="memItemLeft" align="right" valign="top">nfc_target&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1NFC__Runnable.html#a77164638cf62646ed5a9a052f7e6588f">waitForTag</a> (void)</td></tr>
 <tr class="separator:a77164638cf62646ed5a9a052f7e6588f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af811e0df5c1631e17f12302a8ff88df0"><td class="memItemLeft" align="right" valign="top">nfc_device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1NFC__Runnable.html#af811e0df5c1631e17f12302a8ff88df0">reader</a></td></tr>
+<tr class="separator:af811e0df5c1631e17f12302a8ff88df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada806c25451c5753fe865ff2fd80cd57"><td class="memItemLeft" align="right" valign="top">nfc_context *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1NFC__Runnable.html#ada806c25451c5753fe865ff2fd80cd57">context</a></td></tr>
+<tr class="separator:ada806c25451c5753fe865ff2fd80cd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8bb4e6b817345cf661e014e9ef716c"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1NFC__Runnable.html#a9c8bb4e6b817345cf661e014e9ef716c">pollCount</a> = 20</td></tr>
+<tr class="separator:a9c8bb4e6b817345cf661e014e9ef716c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b725f9d0e95f2f9f68583bc634ac7cd"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1NFC__Runnable.html#a8b725f9d0e95f2f9f68583bc634ac7cd">pollPeriod</a> = 2</td></tr>
+<tr class="separator:a8b725f9d0e95f2f9f68583bc634ac7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3c47862b1ef9bd6993993c063ac998"><td class="memItemLeft" align="right" valign="top">const nfc_modulation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1NFC__Runnable.html#a7b3c47862b1ef9bd6993993c063ac998">nmModulations</a> [5]</td></tr>
+<tr class="separator:a7b3c47862b1ef9bd6993993c063ac998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4cbcbd75dfec3fb81a865fc45b5679"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1NFC__Runnable.html#a4b4cbcbd75dfec3fb81a865fc45b5679">szModulations</a> = 5</td></tr>
+<tr class="separator:a4b4cbcbd75dfec3fb81a865fc45b5679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NFC Runnable class that sets up LibNFC on construct, and safely destroys it on destruct. </p>
@@ -149,27 +186,162 @@ Public Member Functions</h2></td></tr>
 <p>waitForTag is a one-shot function to wait for a single NFC target and retursn it</p>
 <dl class="section return"><dt>Returns</dt><dd>nfc_target struct from LibNFC </dd></dl>
 <p>Return the single nfc_target (i.e. the tag)</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classio_1_1NFC__Runnable_a77164638cf62646ed5a9a052f7e6588f_icgraph.png" border="0" usemap="#aclassio_1_1NFC__Runnable_a77164638cf62646ed5a9a052f7e6588f_icgraph" alt=""/></div>
-<map name="aclassio_1_1NFC__Runnable_a77164638cf62646ed5a9a052f7e6588f_icgraph" id="aclassio_1_1NFC__Runnable_a77164638cf62646ed5a9a052f7e6588f_icgraph">
-<area shape="rect" title=" " alt="" coords="203,5,400,32"/>
-<area shape="rect" href="boxofhope_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="104,5,155,32"/>
-<area shape="rect" href="boxofhope_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
-</map>
+
 </div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ada806c25451c5753fe865ff2fd80cd57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada806c25451c5753fe865ff2fd80cd57">&#9670;&nbsp;</a></span>context</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nfc_context* io::NFC_Runnable::context</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b3c47862b1ef9bd6993993c063ac998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b3c47862b1ef9bd6993993c063ac998">&#9670;&nbsp;</a></span>nmModulations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const nfc_modulation io::NFC_Runnable::nmModulations[5]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">                { .nmt = NMT_ISO14443A, .nbr = NBR_106 },</div>
+<div class="line">                { .nmt = NMT_ISO14443B, .nbr = NBR_106 },</div>
+<div class="line">                { .nmt = NMT_FELICA, .nbr = NBR_212 },</div>
+<div class="line">                { .nmt = NMT_FELICA, .nbr = NBR_424 },</div>
+<div class="line">                { .nmt = NMT_JEWEL, .nbr = NBR_106 },</div>
+<div class="line"> </div>
+<div class="line">            }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9c8bb4e6b817345cf661e014e9ef716c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8bb4e6b817345cf661e014e9ef716c">&#9670;&nbsp;</a></span>pollCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t io::NFC_Runnable::pollCount = 20</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b725f9d0e95f2f9f68583bc634ac7cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b725f9d0e95f2f9f68583bc634ac7cd">&#9670;&nbsp;</a></span>pollPeriod</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t io::NFC_Runnable::pollPeriod = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af811e0df5c1631e17f12302a8ff88df0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af811e0df5c1631e17f12302a8ff88df0">&#9670;&nbsp;</a></span>reader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nfc_device* io::NFC_Runnable::reader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b4cbcbd75dfec3fb81a865fc45b5679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4cbcbd75dfec3fb81a865fc45b5679">&#9670;&nbsp;</a></span>szModulations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t io::NFC_Runnable::szModulations = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>servers/io_server/<a class="el" href="io__nfc_8h_source.html">io_nfc.h</a></li>
-<li>servers/io_server/<a class="el" href="io__nfc_8cpp.html">io_nfc.cpp</a></li>
+<li>io_server/include/io_server/<a class="el" href="io__nfc_8h_source.html">io_nfc.h</a></li>
+<li>io_server/src/<a class="el" href="io__nfc_8cpp.html">io_nfc.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceio.html">io</a></li><li class="navelem"><a class="el" href="classio_1_1NFC__Runnable.html">NFC_Runnable</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

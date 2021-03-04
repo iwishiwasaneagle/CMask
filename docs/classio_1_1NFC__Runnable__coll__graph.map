@@ -1,3 +1,8 @@
 <map id="io::NFC_Runnable" name="io::NFC_Runnable">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,141,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="220,160,356,267"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,96,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="121,5,217,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="241,5,335,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="359,5,505,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="529,5,626,83"/>
 </map>

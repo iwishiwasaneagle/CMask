@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['isdooropen_55',['isDoorOpen',['../namespaceio.html#a1a5cbfde956a14d53edf731f93905cae',1,'io']]],
-  ['isinterruptrunning_56',['isInterruptRunning',['../namespaceio.html#a59b6eea1cdc4b552450733c473a56094',1,'io']]]
+  ['debounceavgcount_93',['debounceAvgCount',['../io__door_8cpp.html#a2d980d62adfcef7ee4338ec5974b3863',1,'io_door.cpp']]],
+  ['debouncedelay_94',['debounceDelay',['../io__door_8cpp.html#a90bb1bd9de75294ec6e58cd317301fbc',1,'io_door.cpp']]]
 ];

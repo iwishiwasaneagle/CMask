@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Boxofhope: Main Page</title>
+<title>Boxofhope: io_server</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,97 +82,19 @@ $(function() {
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Boxofhope Documentation</div>  </div>
+<div class="title">io_server </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a></p>
-<p><br  />
- </p><div align="center"> <a href="https://boxofhope.co.uk/"><img src="https://raw.githubusercontent.com/iwishiwasaneagle/boxofhope/main/images/logo.png" alt="Logo" height="160" class="inline"/> </a></div><div align="center"> <h2 align="center">Box Of Hope</h2>
-</div><div align="center"> <br  />
-</div><div align="center"> </div><div align="center"> Event driven COVID-19 safety <br  />
- <a href="https://boxofhope.co.uk/docs/index.html"><b>Explore the docs »</b></a> <br  />
- <br  />
- <a href="https://www.youtube.com/channel/UCG8txVUxQb3aCut7adeDU7A"><img src="images/youtube.svg" alt="" style="pointer-events: none;" height="40" class="inline"/></a>&#160;&#160;&#160;&#160; <a href="https://www.facebook.com/Box-of-Hope-106011608167716"><img src="images/facebook.svg" alt="" style="pointer-events: none;" height="40" class="inline"/></a>&#160;&#160;&#160;&#160; <a href="https://twitter.com/theboxofhope"><img src="images/twitter.svg" alt="" style="pointer-events: none;" height="40" class="inline"/></a>&#160;&#160;&#160;&#160; <a href="https://www.instagram.com/theboxofhope"><img src="images/instagram.svg" alt="" style="pointer-events: none;" height="40" class="inline"/></a>&#160;&#160;&#160;&#160; <a href="https://www.linkedin.com/company/theboxofhope"><img src="images/linkedin.svg" alt="" style="pointer-events: none;" height="40" class="inline"/></a>&#160;&#160;&#160;&#160; <br  />
- <br  />
- <a href="https://www.boxofhope.co.uk">View Demo</a> · <a href="https://github.com/iwishiwasaneagle/boxofhope/issues/new?assignees=&amp;labels=&amp;template=bug_report.md&amp;title=">Report Bug</a> · <a href="https://github.com/iwishiwasaneagle/boxofhope/issues/new?assignees=&amp;labels=&amp;template=feature_request.md&amp;title=">Request Feature</a> </div><div align="center"> </div> <div align="center"></div><div align="center"><a href="https://github.com/iwishiwasaneagle/boxofhope/graphs/contributors"><img src="https://img.shields.io/github/contributors/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Contributors" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/network/members"><img src="https://img.shields.io/github/forks/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Forks" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/stargazers"><img src="https://img.shields.io/github/stars/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Stars" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/issues"><img src="https://img.shields.io/github/issues/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="Issues" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/iwishiwasaneagle/boxofhope/blob/main/LICENSE"><img src="https://img.shields.io/github/license/iwishiwasaneagle/boxofhope.svg?style=for-the-badge" alt="License" style="pointer-events: none;" class="inline"/></a> </div> <div align="center"></div><div align="center"><img src="https://github.com/iwishiwasaneagle/boxofhope/workflows/Servers/badge.svg" alt="Servers" style="pointer-events: none;" class="inline"/> <img src="https://github.com/iwishiwasaneagle/boxofhope/workflows/Docs/badge.svg" alt="Docs" style="pointer-events: none;" class="inline"/> </div><p> <br  />
-</p>
-<h2><a class="anchor" id="autotoc_md0"></a>
-Table of contents</h2>
-<ol>
-<li>
-<a href="#about-the-project">About The Project</a> </li>
-<li>
-<a href="#getting-started">Getting Started</a> </li>
-<li>
-<a href="#usage">Usage</a> </li>
-<li>
-<a href="#roadmap">Roadmap</a> </li>
-<li>
-<a href="#contributing">Contributing</a> </li>
-<li>
-<a href="#license">License</a> </li>
-<li>
-<a href="#contact">Contact</a> </li>
-</ol>
-<h2><a class="anchor" id="autotoc_md1"></a>
-About The Project</h2>
-<p>Box of hope was created to solve the unique, and very annoying, scenario of <br  />
-</p>
-<blockquote class="doxtable">
-<p>Where's my mask? Oh I left it at home... again... </p>
-</blockquote>
-<p>As part of a university, the creators were tasked with creating a event driven codebase that interacts with a user and low level components on a Raspberry Pi.</p>
-<h2><a class="anchor" id="autotoc_md2"></a>
-Getting Started</h2>
-<p>There are 3 servers as part of the <a href="./servers"><code>servers</code></a> folder: sql, io, restful.</p>
-<p>The <code>wiringPi</code> dependecy only runs on Raspberry Pi, therefore if you're building this on a non-RPi platform, please install <a href="https://github.com/iwishiwasaneagle/wiringPi-mock">wiringPi-sim</a>. Otherwise run <code>sudo apt-get install wiringPi</code>.</p>
-<div class="fragment"><div class="line">sudo apt-get install gcc cmake libboost-all-dev libnfc-dev # For ubuntu, use whatever package manager your system needs.</div>
-<div class="line"> </div>
-<div class="line"># Box of Hope</div>
-<div class="line">git clone https://github.com/iwishiwasaneagle/boxofhope</div>
-<div class="line">mkdir servers/build</div>
-<div class="line">cd serves/build</div>
-<div class="line">cmake ..</div>
-<div class="line">make</div>
-</div><!-- fragment --><p>The <code>Boxofhope</code> binary will be located in the automatically generated <code>build</code> folder.</p>
-<p>To use either of the two servers, invoke the binary with <code>--io-server</code>, <code>--restful-server</code> along with the desired server specific configurations. Use <code>-t</code> to run the tests.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Usage</h2>
-<div class="fragment"><div class="line">(boxofhope/servers) $ ./build/Boxofhope</div>
-<div class="line">Welcome to Boxofhope (v0.0.1)</div>
-<div class="line"> </div>
-<div class="line">Usage:</div>
-<div class="line">   -r,--restful-server   Start the RESTful server instance</div>
-<div class="line">   -i,--io-server        Start the IO server instance</div>
-<div class="line">   -h,--help             Print this message</div>
-<div class="line">   -t                    Run tests</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
-Roadmap</h2>
-<p>See the <a href="https://github.com/iwishiwasaneagle/boxofhope/issues?q=is%3Aopen+is%3Aissue+label%3Afeature">open issues</a> for a list of proposed features (and known issues).</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
-Contributing</h2>
-<p>Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are <b>greatly appreciated</b>.</p>
-<ol type="1">
-<li>Fork the Project</li>
-<li>Create your Feature Branch (<code>git checkout -b feature/AmazingFeature</code>)</li>
-<li>Commit your Changes (&lsquo;git commit -m 'Add some AmazingFeature&rsquo;<code>)</code></li>
-<li><code>Push to the Branch (</code>git push origin feature/AmazingFeature`)</li>
-<li>Open a Pull Request</li>
-</ol>
-<h2><a class="anchor" id="autotoc_md6"></a>
-License</h2>
-<p>Distributed under the GPL-3.0 License. See <code>LICENSE</code> for more information.</p>
-<h2><a class="anchor" id="autotoc_md7"></a>
-Contact</h2>
-<p>Jan-Hendrik Ewers - <a href="https://twitter.com/jhewers">@jhewers</a></p>
-<p>Sarah Swinton - <a href="https://twitter.com/SarahESwinton">@SarahESwinton</a></p>
-<p>Martin Karel - <a href="https://twitter.com/13Darcer">@13Darcer</a></p>
-<p>Project Link: <a href="https://github.com/iwishiwasaneagle/boxofhope">https://github.com/iwishiwasaneagle/boxofhope</a> </p>
+<div class="textblock"><p><a class="anchor" id="md_io_server_README"></a> Welcome to the README for <code>io_server</code>.</p>
+<p>// TODO: Add readme lol </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>
