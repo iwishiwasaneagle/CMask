@@ -1,8 +1,0 @@
-<map id="tests" name="tests">
-<area shape="rect" id="node1" title=" " alt="" coords="5,79,56,106"/>
-<area shape="rect" id="node2" href="$classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="104,39,277,80"/>
-<area shape="rect" id="node6" href="$classio_1_1IsUserHome__Runnable.html#a4c5c3f0a220710e0df6228182e72fd7a" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="104,104,277,145"/>
-<area shape="rect" id="node3" href="$classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="325,39,499,80"/>
-<area shape="rect" id="node4" href="$classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="547,5,720,47"/>
-<area shape="rect" id="node5" href="$classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="547,71,720,112"/>
-</map>
