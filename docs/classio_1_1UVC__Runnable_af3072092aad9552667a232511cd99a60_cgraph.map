@@ -1,0 +1,4 @@
+<map id="io::UVC_Runnable::thread_runner" name="io::UVC_Runnable::thread_runner">
+<area shape="rect" id="node1" title="Runs the thread via io::UVC_Runnable::runnable." alt="" coords="5,5,175,47"/>
+<area shape="rect" id="node2" href="$classio_1_1Door__Helper.html#a88a3c0f2c8ffbc28be1aa103c628f75b" title="Wait for the door button to generate a signal." alt="" coords="223,5,387,47"/>
+</map>

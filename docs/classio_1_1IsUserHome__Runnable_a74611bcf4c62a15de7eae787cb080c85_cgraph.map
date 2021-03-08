@@ -1,5 +1,8 @@
 <map id="io::IsUserHome_Runnable::thread_runner" name="io::IsUserHome_Runnable::thread_runner">
 <area shape="rect" id="node1" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="5,39,179,80"/>
 <area shape="rect" id="node2" href="$classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="227,5,400,47"/>
-<area shape="rect" id="node3" href="$classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="227,71,400,112"/>
+<area shape="rect" id="node6" href="$classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="227,71,400,112"/>
+<area shape="rect" id="node3" href="$classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="448,13,609,39"/>
+<area shape="rect" id="node4" href="$classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="657,13,760,39"/>
+<area shape="rect" id="node5" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="808,13,963,39"/>
 </map>

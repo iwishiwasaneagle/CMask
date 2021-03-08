@@ -1,0 +1,6 @@
+<map id="API::MaskState::set" name="API::MaskState::set">
+<area shape="rect" id="node1" title="Set the initial state." alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node2" href="$classAPI_1_1MaskState.html#a8ea875c5a140686367c8de2fb36557a6" title="Update the state." alt="" coords="191,5,349,32"/>
+<area shape="rect" id="node3" href="$classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="397,5,500,32"/>
+<area shape="rect" id="node4" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="548,5,703,32"/>
+</map>

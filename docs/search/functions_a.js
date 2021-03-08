@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['waitfortag_88',['waitForTag',['../classio_1_1NFC__Runnable.html#a77164638cf62646ed5a9a052f7e6588f',1,'io::NFC_Runnable']]]
+  ['runnable_113',['runnable',['../classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc',1,'io::IsUserHome_Runnable::runnable()'],['../classio_1_1UVC__Runnable.html#ae3a498da16eb4a4dd8a4693d58fabf7a',1,'io::UVC_Runnable::runnable()']]]
 ];

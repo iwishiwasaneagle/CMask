@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['uvc_5fled_5fpin_5fwp_48',['UVC_LED_PIN_WP',['../io__server_8h.html#ae038592f8329e68f9a3162116c7a89b4',1,'io_server.h']]]
+  ['pollcount_49',['pollCount',['../classio_1_1NFC__Runnable.html#a9c8bb4e6b817345cf661e014e9ef716c',1,'io::NFC_Runnable']]],
+  ['pollperiod_50',['pollPeriod',['../classio_1_1NFC__Runnable.html#a8b725f9d0e95f2f9f68583bc634ac7cd',1,'io::NFC_Runnable']]]
 ];

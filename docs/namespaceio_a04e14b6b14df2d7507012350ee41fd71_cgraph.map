@@ -1,10 +1,12 @@
 <map id="io::server_run" name="io::server_run">
 <area shape="rect" id="node1" title=" " alt="" coords="5,64,104,91"/>
 <area shape="rect" id="node2" href="$namespaceio.html#a7ce99fbcddfb36220f64995a524819e3" title=" " alt="" coords="195,5,282,32"/>
-<area shape="rect" id="node4" href="$classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="152,57,325,98"/>
-<area shape="rect" id="node8" href="$classio_1_1IsUserHome__Runnable.html#a4c5c3f0a220710e0df6228182e72fd7a" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="152,122,325,163"/>
-<area shape="rect" id="node3" href="$namespaceio.html#a4da6198e35f3bd6077e73521d07b1cdd" title=" " alt="" coords="379,5,541,32"/>
-<area shape="rect" id="node5" href="$classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="373,57,547,98"/>
-<area shape="rect" id="node6" href="$classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="595,23,768,65"/>
-<area shape="rect" id="node7" href="$classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="595,89,768,130"/>
+<area shape="rect" id="node3" href="$classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="152,57,325,98"/>
+<area shape="rect" id="node10" href="$classio_1_1IsUserHome__Runnable.html#a4c5c3f0a220710e0df6228182e72fd7a" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="152,122,325,163"/>
+<area shape="rect" id="node4" href="$classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="373,57,547,98"/>
+<area shape="rect" id="node5" href="$classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="595,23,768,65"/>
+<area shape="rect" id="node9" href="$classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="595,89,768,130"/>
+<area shape="rect" id="node6" href="$classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="816,31,977,57"/>
+<area shape="rect" id="node7" href="$classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="1025,31,1128,57"/>
+<area shape="rect" id="node8" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1176,31,1331,57"/>
 </map>

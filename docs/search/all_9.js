@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['reader_36',['reader',['../classio_1_1NFC__Runnable.html#af811e0df5c1631e17f12302a8ff88df0',1,'io::NFC_Runnable']]],
-  ['readme_2emd_37',['README.md',['../io__server_2README_8md.html',1,'(Global Namespace)'],['../README_8md.html',1,'(Global Namespace)']]],
-  ['runnable_38',['runnable',['../classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc',1,'io::IsUserHome_Runnable']]]
+  ['main_44',['main',['../app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'app.cpp']]],
+  ['maskstate_45',['MaskState',['../classAPI_1_1MaskState.html',1,'API']]]
 ];
