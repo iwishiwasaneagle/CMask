@@ -1,0 +1,6 @@
+<map id="io::IsUserHome_Runnable::stop" name="io::IsUserHome_Runnable::stop">
+<area shape="rect" id="node1" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="251,23,424,65"/>
+<area shape="rect" id="node2" href="$namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,5,203,32"/>
+<area shape="rect" id="node4" href="$app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="128,56,179,83"/>
+<area shape="rect" id="node3" href="$app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,56,57"/>
+</map>
