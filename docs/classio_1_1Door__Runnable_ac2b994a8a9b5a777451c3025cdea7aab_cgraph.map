@@ -1,0 +1,9 @@
+<map id="io::Door_Runnable::runnable" name="io::Door_Runnable::runnable">
+<area shape="rect" id="node1" title="Handles the logic." alt="" coords="5,122,137,163"/>
+<area shape="rect" id="node2" href="$classio_1_1UVC__Runnable.html#acf8b270e310ab705bf405b3912a9ada7" title="Attach to the thread until it finishes. This BLOCKS the thread that it is run from." alt="" coords="199,5,369,32"/>
+<area shape="rect" id="node3" href="$classio_1_1Door__Helper.html#a88a3c0f2c8ffbc28be1aa103c628f75b" title="Wait for the door button to generate a signal." alt="" coords="202,57,366,98"/>
+<area shape="rect" id="node4" href="$classio_1_1Door__Helper.html#a414eef032211626d6c0b4a12fa5a58d2" title="Get the current door state." alt="" coords="213,122,355,163"/>
+<area shape="rect" id="node5" href="$classio_1_1UVC__Runnable.html#ad4c40b8f5054b54f1cfd07d89a0596b8" title="Start the threaded UVC_Runnable." alt="" coords="205,188,363,215"/>
+<area shape="rect" id="node7" href="$classio_1_1NFC__Runnable.html#a77164638cf62646ed5a9a052f7e6588f" title=" " alt="" coords="185,239,383,265"/>
+<area shape="rect" id="node6" href="$classio_1_1UVC__Runnable.html#af3072092aad9552667a232511cd99a60" title="Runs the thread via io::UVC_Runnable::runnable." alt="" coords="431,181,600,222"/>
+</map>

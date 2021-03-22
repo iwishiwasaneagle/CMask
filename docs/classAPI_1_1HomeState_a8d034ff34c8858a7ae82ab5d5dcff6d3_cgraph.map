@@ -1,6 +1,6 @@
 <map id="API::HomeState::set" name="API::HomeState::set">
 <area shape="rect" id="node1" title="Set the initial state." alt="" coords="5,5,145,32"/>
 <area shape="rect" id="node2" href="$classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="193,5,355,32"/>
-<area shape="rect" id="node3" href="$classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="403,5,505,32"/>
+<area shape="rect" id="node3" href="$classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="403,5,505,32"/>
 <area shape="rect" id="node4" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="553,5,708,32"/>
 </map>

@@ -82,8 +82,7 @@ $(document).ready(function(){initNavTree('namespaceio.html',''); initResizable()
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle">
 <div class="title">io Namespace Reference</div>  </div>
 </div><!--header-->
@@ -93,121 +92,25 @@ $(document).ready(function(){initNavTree('namespaceio.html',''); initResizable()
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1Door__Helper.html">Door_Helper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1Door__Runnable.html">Door_Runnable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio_1_1GenericRunnable.html">GenericRunnable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1IsUserHome__Runnable.html">IsUserHome_Runnable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1LCD__Runnable.html">LCD_Runnable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1NFC__Runnable.html">NFC_Runnable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1IO__Server.html">IO_Server</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1UVC__Runnable.html">UVC_Runnable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a04e14b6b14df2d7507012350ee41fd71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71">server_run</a> (int argc, char *argv[])</td></tr>
-<tr class="separator:a04e14b6b14df2d7507012350ee41fd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce99fbcddfb36220f64995a524819e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3">setup_io</a> ()</td></tr>
-<tr class="separator:a7ce99fbcddfb36220f64995a524819e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encloses the full life-cycle of the IO server.</p>
 <p>IO server namespace. Ensures that if the restful_server.h is imported, the same-named functions/class/etc. don't interact. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a04e14b6b14df2d7507012350ee41fd71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04e14b6b14df2d7507012350ee41fd71">&#9670;&nbsp;</a></span>server_run()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int io::server_run </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Handles the full life-cycle of the IO server.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">argc</td><td>Argument count </td></tr>
-    <tr><td class="paramname">argv</td><td>Arguments as a list of list of chars</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Exit code </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph.png" border="0" usemap="#anamespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph" alt=""/></div>
-<map name="anamespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph" id="anamespaceio_a04e14b6b14df2d7507012350ee41fd71_cgraph">
-<area shape="rect" title=" " alt="" coords="5,64,104,91"/>
-<area shape="rect" href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3" title=" " alt="" coords="195,5,282,32"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="152,57,325,98"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a4c5c3f0a220710e0df6228182e72fd7a" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="152,122,325,163"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="373,57,547,98"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="595,23,768,65"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="595,89,768,130"/>
-<area shape="rect" href="classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="816,31,977,57"/>
-<area shape="rect" href="classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="1025,31,1128,57"/>
-<area shape="rect" href="classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1176,31,1331,57"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespaceio_a04e14b6b14df2d7507012350ee41fd71_icgraph.png" border="0" usemap="#anamespaceio_a04e14b6b14df2d7507012350ee41fd71_icgraph" alt=""/></div>
-<map name="anamespaceio_a04e14b6b14df2d7507012350ee41fd71_icgraph" id="anamespaceio_a04e14b6b14df2d7507012350ee41fd71_icgraph">
-<area shape="rect" title=" " alt="" coords="104,5,203,32"/>
-<area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a7ce99fbcddfb36220f64995a524819e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ce99fbcddfb36220f64995a524819e3">&#9670;&nbsp;</a></span>setup_io()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int io::setup_io </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Setup the wiringPi pins and correct dataflow as well as interrupts </p><dl class="section return"><dt>Returns</dt><dd>Exit code </dd></dl>
-<p>WiringPi setup function</p>
-<p>Setup door switch ISR on both rising and falling edge</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespaceio_a7ce99fbcddfb36220f64995a524819e3_icgraph.png" border="0" usemap="#anamespaceio_a7ce99fbcddfb36220f64995a524819e3_icgraph" alt=""/></div>
-<map name="anamespaceio_a7ce99fbcddfb36220f64995a524819e3_icgraph" id="anamespaceio_a7ce99fbcddfb36220f64995a524819e3_icgraph">
-<area shape="rect" title=" " alt="" coords="251,5,337,32"/>
-<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,5,203,32"/>
-<area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
-</map>
-</div>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

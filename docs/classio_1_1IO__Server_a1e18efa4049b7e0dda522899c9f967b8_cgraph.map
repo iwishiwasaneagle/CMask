@@ -1,0 +1,15 @@
+<map id="io::IO_Server::run" name="io::IO_Server::run">
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,127,156"/>
+<area shape="rect" id="node2" href="$io__server_8cpp.html#a8ee3282bc313e547dbbb8d4f4010db61" title=" " alt="" coords="211,5,312,32"/>
+<area shape="rect" id="node3" href="$classio_1_1Door__Runnable.html#aaea315b78f01f855b9913c2557ef0f6f" title="Start the threaded Door_Runnable." alt="" coords="195,57,327,98"/>
+<area shape="rect" id="node5" href="$classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="175,122,348,163"/>
+<area shape="rect" id="node12" href="$classio_1_1Door__Runnable.html#ada4dd35e7a8f2fe8c10cf0ebcfe015a9" title="Stop the thread via a interrupt point within the thread." alt="" coords="183,188,340,215"/>
+<area shape="rect" id="node13" href="$classio_1_1IsUserHome__Runnable.html#a4c5c3f0a220710e0df6228182e72fd7a" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="175,239,348,281"/>
+<area shape="rect" id="node4" href="$classio_1_1Door__Runnable.html#a76e63232ff1c659d1fea899221b09256" title="Runs the thread via io::Door_Runnable::runnable." alt="" coords="417,57,549,98"/>
+<area shape="rect" id="node6" href="$classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="396,122,569,163"/>
+<area shape="rect" id="node7" href="$classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="617,89,791,130"/>
+<area shape="rect" id="node11" href="$classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="617,154,791,195"/>
+<area shape="rect" id="node8" href="$classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="839,96,1000,123"/>
+<area shape="rect" id="node9" href="$classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="1048,96,1151,123"/>
+<area shape="rect" id="node10" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1199,96,1353,123"/>
+</map>

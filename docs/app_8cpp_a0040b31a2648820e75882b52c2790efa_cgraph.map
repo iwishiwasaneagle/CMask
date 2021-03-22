@@ -1,16 +1,15 @@
 <map id="tests" name="tests">
-<area shape="rect" id="node1" title=" " alt="" coords="5,141,56,167"/>
-<area shape="rect" id="node2" href="$classio_1_1UVC__Runnable.html#acf8b270e310ab705bf405b3912a9ada7" title="Attach to the thread until it finishes. This BLOCKS the thread that it is run from." alt="" coords="106,23,275,50"/>
-<area shape="rect" id="node3" href="$classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="104,75,277,116"/>
-<area shape="rect" id="node10" href="$classio_1_1UVC__Runnable.html#ad4c40b8f5054b54f1cfd07d89a0596b8" title="Start the threaded UVC_Runnable." alt="" coords="111,141,270,167"/>
-<area shape="rect" id="node13" href="$classio_1_1IsUserHome__Runnable.html#a4c5c3f0a220710e0df6228182e72fd7a" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="104,192,277,233"/>
-<area shape="rect" id="node14" href="$classio_1_1UVC__Runnable.html#af4d2720dca3d43d365e4b0455986f306" title="Stop the thread via a interrupt point within the thread." alt="" coords="111,258,270,285"/>
-<area shape="rect" id="node4" href="$classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="325,71,499,112"/>
-<area shape="rect" id="node5" href="$classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="547,5,720,47"/>
-<area shape="rect" id="node9" href="$classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="547,71,720,112"/>
-<area shape="rect" id="node6" href="$classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="768,13,929,39"/>
-<area shape="rect" id="node7" href="$classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="977,13,1080,39"/>
-<area shape="rect" id="node8" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1128,13,1283,39"/>
-<area shape="rect" id="node11" href="$classio_1_1UVC__Runnable.html#af3072092aad9552667a232511cd99a60" title="Runs the thread via io::UVC_Runnable::runnable." alt="" coords="327,136,497,177"/>
-<area shape="rect" id="node12" href="$classio_1_1Door__Helper.html#a88a3c0f2c8ffbc28be1aa103c628f75b" title="Wait for the door button to generate a signal." alt="" coords="551,136,715,177"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,123,56,149"/>
+<area shape="rect" id="node2" href="$classio_1_1UVC__Runnable.html#acf8b270e310ab705bf405b3912a9ada7" title="Attach to the thread until it finishes. This BLOCKS the thread that it is run from." alt="" coords="106,5,275,32"/>
+<area shape="rect" id="node3" href="$classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="104,57,277,98"/>
+<area shape="rect" id="node10" href="$classio_1_1UVC__Runnable.html#ad4c40b8f5054b54f1cfd07d89a0596b8" title="Start the threaded UVC_Runnable." alt="" coords="111,123,270,149"/>
+<area shape="rect" id="node12" href="$classio_1_1IsUserHome__Runnable.html#a4c5c3f0a220710e0df6228182e72fd7a" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="104,174,277,215"/>
+<area shape="rect" id="node13" href="$classio_1_1UVC__Runnable.html#af4d2720dca3d43d365e4b0455986f306" title="Stop the thread via a interrupt point within the thread." alt="" coords="111,240,270,267"/>
+<area shape="rect" id="node4" href="$classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="325,54,499,95"/>
+<area shape="rect" id="node5" href="$classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="547,21,720,62"/>
+<area shape="rect" id="node9" href="$classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="547,86,720,127"/>
+<area shape="rect" id="node6" href="$classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="768,28,929,55"/>
+<area shape="rect" id="node7" href="$classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="977,28,1080,55"/>
+<area shape="rect" id="node8" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1128,28,1283,55"/>
+<area shape="rect" id="node11" href="$classio_1_1UVC__Runnable.html#af3072092aad9552667a232511cd99a60" title="Runs the thread via io::UVC_Runnable::runnable." alt="" coords="327,119,497,161"/>
 </map>

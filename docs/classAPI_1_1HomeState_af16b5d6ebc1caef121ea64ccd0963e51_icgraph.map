@@ -1,11 +1,11 @@
 <map id="API::HomeState::update" name="API::HomeState::update">
-<area shape="rect" id="node1" title="Update the state." alt="" coords="936,64,1097,91"/>
-<area shape="rect" id="node2" href="$classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="715,27,888,69"/>
-<area shape="rect" id="node9" href="$classAPI_1_1HomeState.html#a8d034ff34c8858a7ae82ab5d5dcff6d3" title="Set the initial state." alt="" coords="731,93,871,120"/>
-<area shape="rect" id="node3" href="$test_2io__home_8cpp.html#abed9caf36046c2742ce7b05c53c19bb5" title="Test the io::IsUserHome_Runnable non&#45;threaded functionality." alt="" coords="472,5,667,32"/>
-<area shape="rect" id="node4" href="$classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="483,57,656,98"/>
-<area shape="rect" id="node5" href="$classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="251,57,424,98"/>
-<area shape="rect" id="node6" href="$namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,39,203,65"/>
-<area shape="rect" id="node8" href="$app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="128,89,179,116"/>
+<area shape="rect" id="node1" title="Update the state." alt="" coords="959,64,1120,91"/>
+<area shape="rect" id="node2" href="$classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="737,27,911,69"/>
+<area shape="rect" id="node9" href="$classAPI_1_1HomeState.html#a8d034ff34c8858a7ae82ab5d5dcff6d3" title="Set the initial state." alt="" coords="754,93,894,120"/>
+<area shape="rect" id="node3" href="$test_2io__home_8cpp.html#abed9caf36046c2742ce7b05c53c19bb5" title="Test the io::IsUserHome_Runnable non&#45;threaded functionality." alt="" coords="495,5,689,32"/>
+<area shape="rect" id="node4" href="$classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="505,57,679,98"/>
+<area shape="rect" id="node5" href="$classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="273,57,447,98"/>
+<area shape="rect" id="node6" href="$classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8" title=" " alt="" coords="104,39,225,65"/>
+<area shape="rect" id="node8" href="$app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="139,89,190,116"/>
 <area shape="rect" id="node7" href="$app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,64,56,91"/>
 </map>

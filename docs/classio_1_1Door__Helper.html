@@ -103,9 +103,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a88a3c0f2c8ffbc28be1aa103c628f75b"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1Door__Helper.html#a88a3c0f2c8ffbc28be1aa103c628f75b">blocking_wait_for_door</a> (unsigned int time_ms)</td></tr>
 <tr class="memdesc:a88a3c0f2c8ffbc28be1aa103c628f75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the door button to generate a signal.  <a href="classio_1_1Door__Helper.html#a88a3c0f2c8ffbc28be1aa103c628f75b">More...</a><br /></td></tr>
 <tr class="separator:a88a3c0f2c8ffbc28be1aa103c628f75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29961a21506a111dc5a1535680097e2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1Door__Helper.html#ad29961a21506a111dc5a1535680097e2">door_state</a> (void)</td></tr>
-<tr class="memdesc:ad29961a21506a111dc5a1535680097e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current door state.  <a href="classio_1_1Door__Helper.html#ad29961a21506a111dc5a1535680097e2">More...</a><br /></td></tr>
-<tr class="separator:ad29961a21506a111dc5a1535680097e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414eef032211626d6c0b4a12fa5a58d2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1Door__Helper.html#a414eef032211626d6c0b4a12fa5a58d2">door_state</a> (void)</td></tr>
+<tr class="memdesc:a414eef032211626d6c0b4a12fa5a58d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current door state.  <a href="classio_1_1Door__Helper.html#a414eef032211626d6c0b4a12fa5a58d2">More...</a><br /></td></tr>
+<tr class="separator:a414eef032211626d6c0b4a12fa5a58d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a88a3c0f2c8ffbc28be1aa103c628f75b"></a>
@@ -145,18 +145,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classio_1_1Door__Helper_a88a3c0f2c8ffbc28be1aa103c628f75b_icgraph.png" border="0" usemap="#aclassio_1_1Door__Helper_a88a3c0f2c8ffbc28be1aa103c628f75b_icgraph" alt=""/></div>
 <map name="aclassio_1_1Door__Helper_a88a3c0f2c8ffbc28be1aa103c628f75b_icgraph" id="aclassio_1_1Door__Helper_a88a3c0f2c8ffbc28be1aa103c628f75b_icgraph">
-<area shape="rect" title="Wait for the door button to generate a signal." alt="" coords="627,5,791,47"/>
-<area shape="rect" href="classio_1_1UVC__Runnable.html#af3072092aad9552667a232511cd99a60" title="Runs the thread via io::UVC_Runnable::runnable." alt="" coords="409,5,579,47"/>
-<area shape="rect" href="classio_1_1UVC__Runnable.html#ad4c40b8f5054b54f1cfd07d89a0596b8" title="Start the threaded UVC_Runnable." alt="" coords="203,13,361,39"/>
-<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="104,13,155,39"/>
-<area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,56,39"/>
+<area shape="rect" title="Wait for the door button to generate a signal." alt="" coords="236,35,400,76"/>
+<area shape="rect" href="classio_1_1Door__Runnable.html#ac2b994a8a9b5a777451c3025cdea7aab" title="Handles the logic." alt="" coords="31,5,163,47"/>
+<area shape="rect" href="classio_1_1UVC__Runnable.html#ae3a498da16eb4a4dd8a4693d58fabf7a" title="Handles the logic." alt="" coords="5,71,188,98"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ad29961a21506a111dc5a1535680097e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad29961a21506a111dc5a1535680097e2">&#9670;&nbsp;</a></span>door_state()</h2>
+<a id="a414eef032211626d6c0b4a12fa5a58d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414eef032211626d6c0b4a12fa5a58d2">&#9670;&nbsp;</a></span>door_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +163,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool io::Door_Helper::door_state </td>
+          <td class="memname">bool io::Door_Helper::door_state </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -181,6 +179,16 @@ Here is the caller graph for this function:</div>
 
 <p>Get the current door state. </p>
 <dl class="section return"><dt>Returns</dt><dd>Door state </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classio_1_1Door__Helper_a414eef032211626d6c0b4a12fa5a58d2_icgraph.png" border="0" usemap="#aclassio_1_1Door__Helper_a414eef032211626d6c0b4a12fa5a58d2_icgraph" alt=""/></div>
+<map name="aclassio_1_1Door__Helper_a414eef032211626d6c0b4a12fa5a58d2_icgraph" id="aclassio_1_1Door__Helper_a414eef032211626d6c0b4a12fa5a58d2_icgraph">
+<area shape="rect" title="Get the current door state." alt="" coords="236,35,377,76"/>
+<area shape="rect" href="classio_1_1Door__Runnable.html#ac2b994a8a9b5a777451c3025cdea7aab" title="Handles the logic." alt="" coords="31,5,163,47"/>
+<area shape="rect" href="classio_1_1UVC__Runnable.html#ae3a498da16eb4a4dd8a4693d58fabf7a" title="Handles the logic." alt="" coords="5,71,188,98"/>
+</map>
+</div>
 
 </div>
 </div>

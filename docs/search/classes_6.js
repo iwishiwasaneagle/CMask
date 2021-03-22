@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nfc_5frunnable_79',['NFC_Runnable',['../classio_1_1NFC__Runnable.html',1,'io']]]
+  ['maskstate_90',['MaskState',['../classAPI_1_1MaskState.html',1,'API']]]
 ];

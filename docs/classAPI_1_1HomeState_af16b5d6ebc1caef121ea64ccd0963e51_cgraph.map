@@ -1,5 +1,5 @@
 <map id="API::HomeState::update" name="API::HomeState::update">
 <area shape="rect" id="node1" title="Update the state." alt="" coords="5,5,167,32"/>
-<area shape="rect" id="node2" href="$classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="215,5,317,32"/>
+<area shape="rect" id="node2" href="$classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="215,5,317,32"/>
 <area shape="rect" id="node3" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="365,5,520,32"/>
 </map>

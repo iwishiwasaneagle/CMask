@@ -88,36 +88,61 @@ $(document).ready(function(){initNavTree('io__server_8h_source.html',''); initRe
 <a href="io__server_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IO_SERVER_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define IO_SERVER_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="io__server_8h.html#a9b867f6e21ec7a3bc0ea5bbebcdc26c1">    4</a></span>&#160;<span class="preprocessor">#define DOOR_SWITCH_PIN_WP 16 </span><span class="comment">//&lt; Physical pin (indexed by wiringPi ID) for door switch</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="io__server_8h.html#ae038592f8329e68f9a3162116c7a89b4">    5</a></span>&#160;<span class="preprocessor">#define UVC_LED_PIN_WP 15 </span><span class="comment">//&lt; Physical pin (indexed by wiringPi ID) for UV led</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;cstdio&gt;</span> <span class="comment">// popen, FILE, fgets, fputs, pclose</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;wiringPi.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__nfc_8h.html">io_nfc.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__home_8h.html">io_home.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__uvc_8h.html">io_uvc.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__door_8h.html">io_door.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="io__server_8h.html#a9b867f6e21ec7a3bc0ea5bbebcdc26c1">    5</a></span>&#160;<span class="preprocessor">#define DOOR_SWITCH_PIN_WP 1</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="io__server_8h.html#ae038592f8329e68f9a3162116c7a89b4">    7</a></span>&#160;<span class="preprocessor">#define UVC_LED_PIN_WP 2</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;condition_variable&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;cstdio&gt;</span> <span class="comment">// popen, FILE, fgets, fputs, pclose</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceio.html">io</a>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;boost/asio.hpp&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;boost/bind/bind.hpp&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;boost/function.hpp&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;boost/thread.hpp&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;wiringPi.h&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71">server_run</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3">setup_io</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__generic__runnable_8h.html">io_generic_runnable.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__door_8h.html">io_door.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__home_8h.html">io_home.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__nfc_8h.html">io_nfc.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io__uvc_8h.html">io_uvc.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="api_8h.html">utils/api.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceio.html">io</a> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classio_1_1IO__Server.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classio_1_1IO__Server.html">IO_Server</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classio_1_1IO__Server.html#a34b8cf6832fd8d70c4fb486bbabe75f7">setup</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8">run</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classio_1_1IO__Server.html#a1de7764f0d35dfb6e16ad9ec7a04c353">IO_Server</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classio_1_1IO__Server.html#aa24bc617ea01aadf248cb31ce4cfaa75">~IO_Server</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// namespace io</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="io__server_8h.html#ac838374c7fc740c6fda824bb72de3c5f">   60</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="io__server_8h.html#ac838374c7fc740c6fda824bb72de3c5f">IO_SERVER_RUNNING</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aapi_8h_html"><div class="ttname"><a href="api_8h.html">api.h</a></div></div>
+<div class="ttc" id="aclassio_1_1IO__Server_html"><div class="ttname"><a href="classio_1_1IO__Server.html">io::IO_Server</a></div><div class="ttdef"><b>Definition:</b> io_server.h:41</div></div>
+<div class="ttc" id="aclassio_1_1IO__Server_html_a1de7764f0d35dfb6e16ad9ec7a04c353"><div class="ttname"><a href="classio_1_1IO__Server.html#a1de7764f0d35dfb6e16ad9ec7a04c353">io::IO_Server::IO_Server</a></div><div class="ttdeci">IO_Server(void)</div><div class="ttdef"><b>Definition:</b> io_server.cpp:3</div></div>
+<div class="ttc" id="aclassio_1_1IO__Server_html_a1e18efa4049b7e0dda522899c9f967b8"><div class="ttname"><a href="classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8">io::IO_Server::run</a></div><div class="ttdeci">int run(void)</div><div class="ttdef"><b>Definition:</b> io_server.cpp:26</div></div>
+<div class="ttc" id="aclassio_1_1IO__Server_html_a34b8cf6832fd8d70c4fb486bbabe75f7"><div class="ttname"><a href="classio_1_1IO__Server.html#a34b8cf6832fd8d70c4fb486bbabe75f7">io::IO_Server::setup</a></div><div class="ttdeci">int setup(void)</div><div class="ttdef"><b>Definition:</b> io_server.cpp:65</div></div>
+<div class="ttc" id="aclassio_1_1IO__Server_html_aa24bc617ea01aadf248cb31ce4cfaa75"><div class="ttname"><a href="classio_1_1IO__Server.html#aa24bc617ea01aadf248cb31ce4cfaa75">io::IO_Server::~IO_Server</a></div><div class="ttdeci">~IO_Server(void)</div><div class="ttdef"><b>Definition:</b> io_server.cpp:18</div></div>
 <div class="ttc" id="aio__door_8h_html"><div class="ttname"><a href="io__door_8h.html">io_door.h</a></div></div>
+<div class="ttc" id="aio__generic__runnable_8h_html"><div class="ttname"><a href="io__generic__runnable_8h.html">io_generic_runnable.h</a></div></div>
 <div class="ttc" id="aio__home_8h_html"><div class="ttname"><a href="io__home_8h.html">io_home.h</a></div></div>
 <div class="ttc" id="aio__nfc_8h_html"><div class="ttname"><a href="io__nfc_8h.html">io_nfc.h</a></div></div>
+<div class="ttc" id="aio__server_8h_html_ac838374c7fc740c6fda824bb72de3c5f"><div class="ttname"><a href="io__server_8h.html#ac838374c7fc740c6fda824bb72de3c5f">IO_SERVER_RUNNING</a></div><div class="ttdeci">volatile bool IO_SERVER_RUNNING</div><div class="ttdef"><b>Definition:</b> io_server.h:60</div></div>
 <div class="ttc" id="aio__uvc_8h_html"><div class="ttname"><a href="io__uvc_8h.html">io_uvc.h</a></div></div>
-<div class="ttc" id="anamespaceio_html"><div class="ttname"><a href="namespaceio.html">io</a></div><div class="ttdef"><b>Definition:</b> io_door.h:8</div></div>
-<div class="ttc" id="anamespaceio_html_a04e14b6b14df2d7507012350ee41fd71"><div class="ttname"><a href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71">io::server_run</a></div><div class="ttdeci">int server_run(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> io_server.cpp:5</div></div>
-<div class="ttc" id="anamespaceio_html_a7ce99fbcddfb36220f64995a524819e3"><div class="ttname"><a href="namespaceio.html#a7ce99fbcddfb36220f64995a524819e3">io::setup_io</a></div><div class="ttdeci">int setup_io()</div><div class="ttdef"><b>Definition:</b> io_server.cpp:33</div></div>
+<div class="ttc" id="anamespaceio_html"><div class="ttname"><a href="namespaceio.html">io</a></div><div class="ttdef"><b>Definition:</b> io_door.h:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

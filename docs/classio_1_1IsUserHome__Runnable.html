@@ -93,13 +93,23 @@ $(document).ready(function(){initNavTree('classio_1_1IsUserHome__Runnable.html',
 
 <p><code>#include &lt;<a class="el" href="io__home_8h_source.html">io_home.h</a>&gt;</code></p>
 <div class="dynheader">
+Inheritance diagram for io::IsUserHome_Runnable:</div>
+<div class="dyncontent">
+<div class="center"><img src="classio_1_1IsUserHome__Runnable__inherit__graph.png" border="0" usemap="#aio_1_1IsUserHome__Runnable_inherit__map" alt="Inheritance graph"/></div>
+<map name="aio_1_1IsUserHome__Runnable_inherit__map" id="aio_1_1IsUserHome__Runnable_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,160,188,355"/>
+<area shape="rect" href="structio_1_1GenericRunnable.html" title=" " alt="" coords="28,5,165,112"/>
+</map>
+</div>
+<div class="dynheader">
 Collaboration diagram for io::IsUserHome_Runnable:</div>
 <div class="dyncontent">
 <div class="center"><img src="classio_1_1IsUserHome__Runnable__coll__graph.png" border="0" usemap="#aio_1_1IsUserHome__Runnable_coll__map" alt="Collaboration graph"/></div>
 <map name="aio_1_1IsUserHome__Runnable_coll__map" id="aio_1_1IsUserHome__Runnable_coll__map">
-<area shape="rect" title=" " alt="" coords="5,145,188,325"/>
-<area shape="rect" title=" " alt="" coords="8,5,79,83"/>
-<area shape="rect" title=" " alt="" coords="103,5,200,83"/>
+<area shape="rect" title=" " alt="" coords="111,175,293,355"/>
+<area shape="rect" href="structio_1_1GenericRunnable.html" title=" " alt="" coords="5,5,143,112"/>
+<area shape="rect" title=" " alt="" coords="167,20,237,97"/>
+<area shape="rect" title=" " alt="" coords="261,20,359,97"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -141,7 +151,6 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:aea70a185eece95b0abca53c183c0cdd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval in seconds.  <a href="classio_1_1IsUserHome__Runnable.html#aea70a185eece95b0abca53c183c0cdd6">More...</a><br /></td></tr>
 <tr class="separator:aea70a185eece95b0abca53c183c0cdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8885cdaf6fd84f8f7f85f1ddfafd987a"><td class="memItemLeft" align="right" valign="top">boost::thread_group&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1IsUserHome__Runnable.html#a8885cdaf6fd84f8f7f85f1ddfafd987a">thread_group</a></td></tr>
-<tr class="memdesc:a8885cdaf6fd84f8f7f85f1ddfafd987a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread group to hold the thread running the IsUserHome_runnable::runnable.  <a href="classio_1_1IsUserHome__Runnable.html#a8885cdaf6fd84f8f7f85f1ddfafd987a">More...</a><br /></td></tr>
 <tr class="separator:a8885cdaf6fd84f8f7f85f1ddfafd987a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -197,6 +206,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void io::IsUserHome_Runnable::attach </td>
@@ -206,9 +218,16 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Attach to the thread until it finishes. This BLOCKS the thread that it is run from. </p>
+
+<p>Reimplemented from <a class="el" href="structio_1_1GenericRunnable.html#ab056e827033d8b3ec07a24d2fd3d028a">io::GenericRunnable</a>.</p>
 
 </div>
 </div>
@@ -227,7 +246,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Pings an ip address, if the ip is pingable it's deemed that the user is home </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Pings an ip address, if the ip is pingable it's deemed that the user is home</p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ip</td><td>User's mobile phone IP address.</td></tr>
   </table>
@@ -241,7 +260,7 @@ Here is the call graph for this function:</div>
 <map name="aclassio_1_1IsUserHome__Runnable_aa0360424d1856c33f366f668daa1032e_cgraph" id="aclassio_1_1IsUserHome__Runnable_aa0360424d1856c33f366f668daa1032e_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,179,47"/>
 <area shape="rect" href="classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="227,13,388,39"/>
-<area shape="rect" href="classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="436,13,539,39"/>
+<area shape="rect" href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="436,13,539,39"/>
 <area shape="rect" href="classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="587,13,741,39"/>
 </map>
 </div>
@@ -250,12 +269,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classio_1_1IsUserHome__Runnable_aa0360424d1856c33f366f668daa1032e_icgraph.png" border="0" usemap="#aclassio_1_1IsUserHome__Runnable_aa0360424d1856c33f366f668daa1032e_icgraph" alt=""/></div>
 <map name="aclassio_1_1IsUserHome__Runnable_aa0360424d1856c33f366f668daa1032e_icgraph" id="aclassio_1_1IsUserHome__Runnable_aa0360424d1856c33f366f668daa1032e_icgraph">
-<area shape="rect" title=" " alt="" coords="715,27,888,69"/>
-<area shape="rect" href="test_2io__home_8cpp.html#abed9caf36046c2742ce7b05c53c19bb5" title="Test the io::IsUserHome_Runnable non&#45;threaded functionality." alt="" coords="472,5,667,32"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="483,57,656,98"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="251,57,424,98"/>
-<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,39,203,65"/>
-<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="128,89,179,116"/>
+<area shape="rect" title=" " alt="" coords="737,27,911,69"/>
+<area shape="rect" href="test_2io__home_8cpp.html#abed9caf36046c2742ce7b05c53c19bb5" title="Test the io::IsUserHome_Runnable non&#45;threaded functionality." alt="" coords="495,5,689,32"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="505,57,679,98"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="273,57,447,98"/>
+<area shape="rect" href="classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8" title=" " alt="" coords="104,39,225,65"/>
+<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="139,89,190,116"/>
 <area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,64,56,91"/>
 </map>
 </div>
@@ -322,11 +341,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classio_1_1IsUserHome__Runnable_a61a21bff7c00aeebdea02653f2973bdc_icgraph.png" border="0" usemap="#aclassio_1_1IsUserHome__Runnable_a61a21bff7c00aeebdea02653f2973bdc_icgraph" alt=""/></div>
 <map name="aclassio_1_1IsUserHome__Runnable_a61a21bff7c00aeebdea02653f2973bdc_icgraph" id="aclassio_1_1IsUserHome__Runnable_a61a21bff7c00aeebdea02653f2973bdc_icgraph">
-<area shape="rect" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="693,23,867,65"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="472,23,645,65"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="251,23,424,65"/>
-<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,5,203,32"/>
-<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="128,56,179,83"/>
+<area shape="rect" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="716,23,889,65"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="495,23,668,65"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="273,23,447,65"/>
+<area shape="rect" href="classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8" title=" " alt="" coords="104,5,225,32"/>
+<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="139,56,190,83"/>
 <area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -338,6 +357,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void io::IsUserHome_Runnable::start </td>
@@ -347,9 +369,16 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Start the threaded periodic call to <a class="el" href="classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e">IsUserHome_Runnable::isUserHome</a>. </p>
+
+<p>Reimplemented from <a class="el" href="structio_1_1GenericRunnable.html#a89512f8599fa04adaefe45b5a804fa0c">io::GenericRunnable</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -360,7 +389,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="448,5,621,47"/>
 <area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="448,71,621,112"/>
 <area shape="rect" href="classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="669,13,831,39"/>
-<area shape="rect" href="classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="879,13,981,39"/>
+<area shape="rect" href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="879,13,981,39"/>
 <area shape="rect" href="classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1029,13,1184,39"/>
 </map>
 </div>
@@ -369,9 +398,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classio_1_1IsUserHome__Runnable_a1afc0152e90e89a45808ffc175bac894_icgraph.png" border="0" usemap="#aclassio_1_1IsUserHome__Runnable_a1afc0152e90e89a45808ffc175bac894_icgraph" alt=""/></div>
 <map name="aclassio_1_1IsUserHome__Runnable_a1afc0152e90e89a45808ffc175bac894_icgraph" id="aclassio_1_1IsUserHome__Runnable_a1afc0152e90e89a45808ffc175bac894_icgraph">
-<area shape="rect" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="251,23,424,65"/>
-<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,5,203,32"/>
-<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="128,56,179,83"/>
+<area shape="rect" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="273,23,447,65"/>
+<area shape="rect" href="classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8" title=" " alt="" coords="104,5,225,32"/>
+<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="139,56,190,83"/>
 <area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -383,6 +412,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void io::IsUserHome_Runnable::stop </td>
@@ -392,17 +424,24 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Stop the periodic thread via a interrupt point within the thread. </p>
+
+<p>Reimplemented from <a class="el" href="structio_1_1GenericRunnable.html#abeaa61a98fc6a716b9d7639f5fd47a35">io::GenericRunnable</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classio_1_1IsUserHome__Runnable_a4c5c3f0a220710e0df6228182e72fd7a_icgraph.png" border="0" usemap="#aclassio_1_1IsUserHome__Runnable_a4c5c3f0a220710e0df6228182e72fd7a_icgraph" alt=""/></div>
 <map name="aclassio_1_1IsUserHome__Runnable_a4c5c3f0a220710e0df6228182e72fd7a_icgraph" id="aclassio_1_1IsUserHome__Runnable_a4c5c3f0a220710e0df6228182e72fd7a_icgraph">
-<area shape="rect" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="251,23,424,65"/>
-<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,5,203,32"/>
-<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="128,56,179,83"/>
+<area shape="rect" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="273,23,447,65"/>
+<area shape="rect" href="classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8" title=" " alt="" coords="104,5,225,32"/>
+<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="139,56,190,83"/>
 <area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -443,7 +482,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="227,5,400,47"/>
 <area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="227,71,400,112"/>
 <area shape="rect" href="classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="448,13,609,39"/>
-<area shape="rect" href="classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="657,13,760,39"/>
+<area shape="rect" href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="657,13,760,39"/>
 <area shape="rect" href="classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="808,13,963,39"/>
 </map>
 </div>
@@ -452,10 +491,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classio_1_1IsUserHome__Runnable_a74611bcf4c62a15de7eae787cb080c85_icgraph.png" border="0" usemap="#aclassio_1_1IsUserHome__Runnable_a74611bcf4c62a15de7eae787cb080c85_icgraph" alt=""/></div>
 <map name="aclassio_1_1IsUserHome__Runnable_a74611bcf4c62a15de7eae787cb080c85_icgraph" id="aclassio_1_1IsUserHome__Runnable_a74611bcf4c62a15de7eae787cb080c85_icgraph">
-<area shape="rect" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="472,23,645,65"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="251,23,424,65"/>
-<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,5,203,32"/>
-<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="128,56,179,83"/>
+<area shape="rect" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="495,23,668,65"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="273,23,447,65"/>
+<area shape="rect" href="classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8" title=" " alt="" coords="104,5,225,32"/>
+<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="139,56,190,83"/>
 <area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,31,56,57"/>
 </map>
 </div>
@@ -506,8 +545,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Thread group to hold the thread running the IsUserHome_runnable::runnable. </p>
+<p>Thread group to hold the thread running the IsUserHome_runnable::runnable </p>
 
 </div>
 </div>

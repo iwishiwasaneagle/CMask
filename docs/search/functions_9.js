@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operation_112',['operation',['../classAPI.html#afdbcc8be491896b4f4cae999432e5c89',1,'API::operation(std::string method, std::string url, std::string port, std::string endpoint, json body, json headers)'],['../classAPI.html#ad7a5a233b6ee97cb73dffb33efc5a90b',1,'API::operation(std::string method, std::string url, std::string port, std::string endpoint, json body)'],['../classAPI.html#a06e29b708d84d42a12f38a8898dcdf1f',1,'API::operation(std::string method, std::string url, std::string port, std::string endpoint)']]]
+  ['operation_131',['operation',['../classAPI.html#affc2655f85dc13294d6d34f3bb0016f4',1,'API::operation(std::string method, std::string endpoint, json body, json headers)'],['../classAPI.html#ac3e3315fd6d1c88ebb46492573085f67',1,'API::operation(std::string method, std::string endpoint, json body)'],['../classAPI.html#a795de1730b674626698c670e1cc6d790',1,'API::operation(std::string method, std::string endpoint)']]]
 ];

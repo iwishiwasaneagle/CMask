@@ -102,10 +102,16 @@ Collaboration diagram for API:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPI_1_1HomeState.html">HomeState</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static class to access the /state/user-home endpoint.  <a href="classAPI_1_1HomeState.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to access the /state/user-home endpoint.  <a href="classAPI_1_1HomeState.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPI_1_1MaskState.html">MaskState</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static class to access the /state/present-mask endpoint.  <a href="classAPI_1_1MaskState.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to access the /state/present-mask endpoint.  <a href="classAPI_1_1MaskState.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAPI_1_1State.html">State</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template struct to allow a consistent <a class="el" href="classAPI.html">API</a> interface to be made. All states are single value, and therefore T can be bool, int, etc.  <a href="structAPI_1_1State.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPI_1_1UVCState.html">UVCState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to access the /state/uvc endpoint.  <a href="classAPI_1_1UVCState.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
@@ -113,15 +119,15 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:adb6e932b7b5d2e5dd33249ef601cb265"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265">cUrlWriteCallback</a> (void *contents, size_t size, size_t nmemb, void *userp)</td></tr>
 <tr class="memdesc:adb6e932b7b5d2e5dd33249ef601cb265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for cURL <a href="https://curl.se/libcurl/c/CURLOPT_WRITEFUNCTION.html">CURLOPT_WRITEFUNCTION</a>  <a href="classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265">More...</a><br /></td></tr>
 <tr class="separator:adb6e932b7b5d2e5dd33249ef601cb265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdbcc8be491896b4f4cae999432e5c89"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPI.html#afdbcc8be491896b4f4cae999432e5c89">operation</a> (std::string method, std::string url, std::string port, std::string endpoint, <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> body, <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> headers)</td></tr>
-<tr class="memdesc:afdbcc8be491896b4f4cae999432e5c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic static function for <a class="el" href="classAPI.html">API</a> members to use for running HTTP requests.  <a href="classAPI.html#afdbcc8be491896b4f4cae999432e5c89">More...</a><br /></td></tr>
-<tr class="separator:afdbcc8be491896b4f4cae999432e5c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7a5a233b6ee97cb73dffb33efc5a90b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPI.html#ad7a5a233b6ee97cb73dffb33efc5a90b">operation</a> (std::string method, std::string url, std::string port, std::string endpoint, <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> body)</td></tr>
-<tr class="memdesc:ad7a5a233b6ee97cb73dffb33efc5a90b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic static function for <a class="el" href="classAPI.html">API</a> members to use for running HTTP requests.  <a href="classAPI.html#ad7a5a233b6ee97cb73dffb33efc5a90b">More...</a><br /></td></tr>
-<tr class="separator:ad7a5a233b6ee97cb73dffb33efc5a90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06e29b708d84d42a12f38a8898dcdf1f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPI.html#a06e29b708d84d42a12f38a8898dcdf1f">operation</a> (std::string method, std::string url, std::string port, std::string endpoint)</td></tr>
-<tr class="memdesc:a06e29b708d84d42a12f38a8898dcdf1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic static function for <a class="el" href="classAPI.html">API</a> members to use for running HTTP requests.  <a href="classAPI.html#a06e29b708d84d42a12f38a8898dcdf1f">More...</a><br /></td></tr>
-<tr class="separator:a06e29b708d84d42a12f38a8898dcdf1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc2655f85dc13294d6d34f3bb0016f4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4">operation</a> (std::string method, std::string endpoint, <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> body, <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> headers)</td></tr>
+<tr class="memdesc:affc2655f85dc13294d6d34f3bb0016f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic static function for <a class="el" href="classAPI.html">API</a> members to use for running HTTP requests.  <a href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4">More...</a><br /></td></tr>
+<tr class="separator:affc2655f85dc13294d6d34f3bb0016f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e3315fd6d1c88ebb46492573085f67"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPI.html#ac3e3315fd6d1c88ebb46492573085f67">operation</a> (std::string method, std::string endpoint, <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> body)</td></tr>
+<tr class="memdesc:ac3e3315fd6d1c88ebb46492573085f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic static function for <a class="el" href="classAPI.html">API</a> members to use for running HTTP requests.  <a href="classAPI.html#ac3e3315fd6d1c88ebb46492573085f67">More...</a><br /></td></tr>
+<tr class="separator:ac3e3315fd6d1c88ebb46492573085f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795de1730b674626698c670e1cc6d790"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPI.html#a795de1730b674626698c670e1cc6d790">operation</a> (std::string method, std::string endpoint)</td></tr>
+<tr class="memdesc:a795de1730b674626698c670e1cc6d790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic static function for <a class="el" href="classAPI.html">API</a> members to use for running HTTP requests.  <a href="classAPI.html#a795de1730b674626698c670e1cc6d790">More...</a><br /></td></tr>
+<tr class="separator:a795de1730b674626698c670e1cc6d790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="adb6e932b7b5d2e5dd33249ef601cb265"></a>
@@ -186,28 +192,32 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classAPI_adb6e932b7b5d2e5dd33249ef601cb265_icgraph.png" border="0" usemap="#aclassAPI_adb6e932b7b5d2e5dd33249ef601cb265_icgraph" alt=""/></div>
 <map name="aclassAPI_adb6e932b7b5d2e5dd33249ef601cb265_icgraph" id="aclassAPI_adb6e932b7b5d2e5dd33249ef601cb265_icgraph">
-<area shape="rect" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1296,81,1451,108"/>
-<area shape="rect" href="classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="1145,81,1248,108"/>
-<area shape="rect" href="classAPI_1_1MaskState.html#a5dfcb55adae6eb4498be56db868de2eb" title="Get the state." alt="" coords="948,5,1085,32"/>
-<area shape="rect" href="classAPI.html#a06e29b708d84d42a12f38a8898dcdf1f" title="Generic static function for API members to use for running HTTP requests." alt="" coords="965,56,1068,83"/>
-<area shape="rect" href="classAPI_1_1MaskState.html#a8ea875c5a140686367c8de2fb36557a6" title="Update the state." alt="" coords="937,107,1096,133"/>
-<area shape="rect" href="classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="936,161,1097,188"/>
-<area shape="rect" href="classAPI_1_1MaskState.html#a8a59a59de7a450dfaa9e0ce04536bde1" title="Set the initial state." alt="" coords="733,103,870,129"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="715,154,888,195"/>
-<area shape="rect" href="classAPI_1_1HomeState.html#a8d034ff34c8858a7ae82ab5d5dcff6d3" title="Set the initial state." alt="" coords="731,220,871,247"/>
-<area shape="rect" href="test_2io__home_8cpp.html#abed9caf36046c2742ce7b05c53c19bb5" title="Test the io::IsUserHome_Runnable non&#45;threaded functionality." alt="" coords="472,132,667,159"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="483,183,656,225"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="251,183,424,225"/>
-<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,165,203,192"/>
-<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="128,216,179,243"/>
-<area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,191,56,217"/>
+<area shape="rect" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1319,157,1473,184"/>
+<area shape="rect" href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="1168,157,1271,184"/>
+<area shape="rect" href="classAPI_1_1HomeState.html#ad4074236bbf2d5297651146ac823d40f" title="Get the state." alt="" coords="969,5,1109,32"/>
+<area shape="rect" href="classAPI_1_1MaskState.html#a5dfcb55adae6eb4498be56db868de2eb" title="Get the state." alt="" coords="971,56,1108,83"/>
+<area shape="rect" href="classAPI_1_1UVCState.html#ac9bb4dd678b621063e864939a5613a60" title="Get the last sterilization time." alt="" coords="973,107,1106,133"/>
+<area shape="rect" href="classAPI.html#a795de1730b674626698c670e1cc6d790" title="Generic static function for API members to use for running HTTP requests." alt="" coords="988,157,1091,184"/>
+<area shape="rect" href="classAPI_1_1MaskState.html#a8ea875c5a140686367c8de2fb36557a6" title="Update the state." alt="" coords="960,208,1119,235"/>
+<area shape="rect" href="classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="959,259,1120,285"/>
+<area shape="rect" href="classAPI_1_1UVCState.html#a4fbd4f9698d98160e313632cf47c6f18" title="Update the state." alt="" coords="962,309,1117,336"/>
+<area shape="rect" href="classAPI_1_1MaskState.html#a8a59a59de7a450dfaa9e0ce04536bde1" title="Set the initial state." alt="" coords="755,171,893,197"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="737,222,911,263"/>
+<area shape="rect" href="classAPI_1_1HomeState.html#a8d034ff34c8858a7ae82ab5d5dcff6d3" title="Set the initial state." alt="" coords="754,288,894,315"/>
+<area shape="rect" href="test_2io__home_8cpp.html#abed9caf36046c2742ce7b05c53c19bb5" title="Test the io::IsUserHome_Runnable non&#45;threaded functionality." alt="" coords="495,200,689,227"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="505,251,679,293"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="273,251,447,293"/>
+<area shape="rect" href="classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8" title=" " alt="" coords="104,233,225,260"/>
+<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="139,284,190,311"/>
+<area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,259,56,285"/>
+<area shape="rect" href="classAPI_1_1UVCState.html#affc033f4d7dd1a17c0e7b1c0d38adc87" title="Set the initial state." alt="" coords="757,339,891,365"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a06e29b708d84d42a12f38a8898dcdf1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06e29b708d84d42a12f38a8898dcdf1f">&#9670;&nbsp;</a></span>operation() <span class="overload">[1/3]</span></h2>
+<a id="a795de1730b674626698c670e1cc6d790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795de1730b674626698c670e1cc6d790">&#9670;&nbsp;</a></span>operation() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,18 +230,6 @@ Here is the caller graph for this function:</div>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>method</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>url</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -253,12 +251,10 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Generic static function for <a class="el" href="classAPI.html">API</a> members to use for running HTTP requests. </p>
-<p>Passes a empty ibody <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d" title="Nlohmann&#39;s JSON library">json</a> object to <a class="el" href="classAPI.html#ad7a5a233b6ee97cb73dffb33efc5a90b" title="Generic static function for API members to use for running HTTP requests.">API::operation(std::string, std::string, std::string, std::string, json)</a>.</p>
+<p>Passes a empty body <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d" title="Nlohmann&#39;s JSON library">json</a> object to <a class="el" href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests.">API::operation</a>(std::string, std::string, json).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">method</td><td>The HTTP method to use (GET, POST, etc) </td></tr>
-    <tr><td class="paramname">url</td><td><a class="el" href="classAPI.html">API</a> URL </td></tr>
-    <tr><td class="paramname">port</td><td><a class="el" href="classAPI.html">API</a> port </td></tr>
     <tr><td class="paramname">endpoint</td><td><a class="el" href="classAPI.html">API</a> endpoint beginning with a '/'</td></tr>
   </table>
   </dd>
@@ -267,18 +263,18 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classAPI_a06e29b708d84d42a12f38a8898dcdf1f_cgraph.png" border="0" usemap="#aclassAPI_a06e29b708d84d42a12f38a8898dcdf1f_cgraph" alt=""/></div>
-<map name="aclassAPI_a06e29b708d84d42a12f38a8898dcdf1f_cgraph" id="aclassAPI_a06e29b708d84d42a12f38a8898dcdf1f_cgraph">
+<div class="center"><img src="classAPI_a795de1730b674626698c670e1cc6d790_cgraph.png" border="0" usemap="#aclassAPI_a795de1730b674626698c670e1cc6d790_cgraph" alt=""/></div>
+<map name="aclassAPI_a795de1730b674626698c670e1cc6d790_cgraph" id="aclassAPI_a795de1730b674626698c670e1cc6d790_cgraph">
 <area shape="rect" title="Generic static function for API members to use for running HTTP requests." alt="" coords="5,5,108,32"/>
-<area shape="rect" href="classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="156,5,259,32"/>
+<area shape="rect" href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="156,5,259,32"/>
 <area shape="rect" href="classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="307,5,461,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ad7a5a233b6ee97cb73dffb33efc5a90b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7a5a233b6ee97cb73dffb33efc5a90b">&#9670;&nbsp;</a></span>operation() <span class="overload">[2/3]</span></h2>
+<a id="ac3e3315fd6d1c88ebb46492573085f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e3315fd6d1c88ebb46492573085f67">&#9670;&nbsp;</a></span>operation() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,18 +287,6 @@ Here is the call graph for this function:</div>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>method</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>url</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -330,12 +314,10 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Generic static function for <a class="el" href="classAPI.html">API</a> members to use for running HTTP requests. </p>
-<p>Passes a empty header <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d" title="Nlohmann&#39;s JSON library">json</a> object to <a class="el" href="classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests.">API::operation(std::string, std::string, std::string, std::string, json, json)</a>.</p>
+<p>Passes a empty header <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d" title="Nlohmann&#39;s JSON library">json</a> object to <a class="el" href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests.">API::operation</a>(std::string, std::string, json, json).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">method</td><td>The HTTP method to use (GET, POST, etc) </td></tr>
-    <tr><td class="paramname">url</td><td><a class="el" href="classAPI.html">API</a> URL </td></tr>
-    <tr><td class="paramname">port</td><td><a class="el" href="classAPI.html">API</a> port </td></tr>
     <tr><td class="paramname">endpoint</td><td><a class="el" href="classAPI.html">API</a> endpoint beginning with a '/' </td></tr>
     <tr><td class="paramname">body</td><td>Request body as a <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d" title="Nlohmann&#39;s JSON library">json</a> object</td></tr>
   </table>
@@ -345,18 +327,18 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classAPI_ad7a5a233b6ee97cb73dffb33efc5a90b_cgraph.png" border="0" usemap="#aclassAPI_ad7a5a233b6ee97cb73dffb33efc5a90b_cgraph" alt=""/></div>
-<map name="aclassAPI_ad7a5a233b6ee97cb73dffb33efc5a90b_cgraph" id="aclassAPI_ad7a5a233b6ee97cb73dffb33efc5a90b_cgraph">
+<div class="center"><img src="classAPI_ac3e3315fd6d1c88ebb46492573085f67_cgraph.png" border="0" usemap="#aclassAPI_ac3e3315fd6d1c88ebb46492573085f67_cgraph" alt=""/></div>
+<map name="aclassAPI_ac3e3315fd6d1c88ebb46492573085f67_cgraph" id="aclassAPI_ac3e3315fd6d1c88ebb46492573085f67_cgraph">
 <area shape="rect" title="Generic static function for API members to use for running HTTP requests." alt="" coords="5,5,108,32"/>
-<area shape="rect" href="classAPI.html#afdbcc8be491896b4f4cae999432e5c89" title="Generic static function for API members to use for running HTTP requests." alt="" coords="156,5,259,32"/>
+<area shape="rect" href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="156,5,259,32"/>
 <area shape="rect" href="classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="307,5,461,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="afdbcc8be491896b4f4cae999432e5c89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdbcc8be491896b4f4cae999432e5c89">&#9670;&nbsp;</a></span>operation() <span class="overload">[3/3]</span></h2>
+<a id="affc2655f85dc13294d6d34f3bb0016f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc2655f85dc13294d6d34f3bb0016f4">&#9670;&nbsp;</a></span>operation() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,18 +351,6 @@ Here is the call graph for this function:</div>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>method</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>url</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -417,8 +387,6 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">method</td><td>The HTTP method to use (GET, POST, etc) </td></tr>
-    <tr><td class="paramname">url</td><td><a class="el" href="classAPI.html">API</a> URL </td></tr>
-    <tr><td class="paramname">port</td><td><a class="el" href="classAPI.html">API</a> port </td></tr>
     <tr><td class="paramname">endpoint</td><td><a class="el" href="classAPI.html">API</a> endpoint beginning with a '/' </td></tr>
     <tr><td class="paramname">body</td><td>Request body as a <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d" title="Nlohmann&#39;s JSON library">json</a> object </td></tr>
     <tr><td class="paramname">headers</td><td>Request headers as a <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d" title="Nlohmann&#39;s JSON library">json</a> object</td></tr>
@@ -429,8 +397,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classAPI_afdbcc8be491896b4f4cae999432e5c89_cgraph.png" border="0" usemap="#aclassAPI_afdbcc8be491896b4f4cae999432e5c89_cgraph" alt=""/></div>
-<map name="aclassAPI_afdbcc8be491896b4f4cae999432e5c89_cgraph" id="aclassAPI_afdbcc8be491896b4f4cae999432e5c89_cgraph">
+<div class="center"><img src="classAPI_affc2655f85dc13294d6d34f3bb0016f4_cgraph.png" border="0" usemap="#aclassAPI_affc2655f85dc13294d6d34f3bb0016f4_cgraph" alt=""/></div>
+<map name="aclassAPI_affc2655f85dc13294d6d34f3bb0016f4_cgraph" id="aclassAPI_affc2655f85dc13294d6d34f3bb0016f4_cgraph">
 <area shape="rect" title="Generic static function for API members to use for running HTTP requests." alt="" coords="5,5,108,32"/>
 <area shape="rect" href="classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="156,5,311,32"/>
 </map>
@@ -438,22 +406,26 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classAPI_afdbcc8be491896b4f4cae999432e5c89_icgraph.png" border="0" usemap="#aclassAPI_afdbcc8be491896b4f4cae999432e5c89_icgraph" alt=""/></div>
-<map name="aclassAPI_afdbcc8be491896b4f4cae999432e5c89_icgraph" id="aclassAPI_afdbcc8be491896b4f4cae999432e5c89_icgraph">
-<area shape="rect" title="Generic static function for API members to use for running HTTP requests." alt="" coords="1145,81,1248,108"/>
-<area shape="rect" href="classAPI_1_1MaskState.html#a5dfcb55adae6eb4498be56db868de2eb" title="Get the state." alt="" coords="948,5,1085,32"/>
-<area shape="rect" href="classAPI.html#a06e29b708d84d42a12f38a8898dcdf1f" title="Generic static function for API members to use for running HTTP requests." alt="" coords="965,56,1068,83"/>
-<area shape="rect" href="classAPI_1_1MaskState.html#a8ea875c5a140686367c8de2fb36557a6" title="Update the state." alt="" coords="937,107,1096,133"/>
-<area shape="rect" href="classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="936,161,1097,188"/>
-<area shape="rect" href="classAPI_1_1MaskState.html#a8a59a59de7a450dfaa9e0ce04536bde1" title="Set the initial state." alt="" coords="733,103,870,129"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="715,154,888,195"/>
-<area shape="rect" href="classAPI_1_1HomeState.html#a8d034ff34c8858a7ae82ab5d5dcff6d3" title="Set the initial state." alt="" coords="731,220,871,247"/>
-<area shape="rect" href="test_2io__home_8cpp.html#abed9caf36046c2742ce7b05c53c19bb5" title="Test the io::IsUserHome_Runnable non&#45;threaded functionality." alt="" coords="472,132,667,159"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="483,183,656,225"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="251,183,424,225"/>
-<area shape="rect" href="namespaceio.html#a04e14b6b14df2d7507012350ee41fd71" title=" " alt="" coords="104,165,203,192"/>
-<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="128,216,179,243"/>
-<area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,191,56,217"/>
+<div class="center"><img src="classAPI_affc2655f85dc13294d6d34f3bb0016f4_icgraph.png" border="0" usemap="#aclassAPI_affc2655f85dc13294d6d34f3bb0016f4_icgraph" alt=""/></div>
+<map name="aclassAPI_affc2655f85dc13294d6d34f3bb0016f4_icgraph" id="aclassAPI_affc2655f85dc13294d6d34f3bb0016f4_icgraph">
+<area shape="rect" title="Generic static function for API members to use for running HTTP requests." alt="" coords="1168,157,1271,184"/>
+<area shape="rect" href="classAPI_1_1HomeState.html#ad4074236bbf2d5297651146ac823d40f" title="Get the state." alt="" coords="969,5,1109,32"/>
+<area shape="rect" href="classAPI_1_1MaskState.html#a5dfcb55adae6eb4498be56db868de2eb" title="Get the state." alt="" coords="971,56,1108,83"/>
+<area shape="rect" href="classAPI_1_1UVCState.html#ac9bb4dd678b621063e864939a5613a60" title="Get the last sterilization time." alt="" coords="973,107,1106,133"/>
+<area shape="rect" href="classAPI.html#a795de1730b674626698c670e1cc6d790" title="Generic static function for API members to use for running HTTP requests." alt="" coords="988,157,1091,184"/>
+<area shape="rect" href="classAPI_1_1MaskState.html#a8ea875c5a140686367c8de2fb36557a6" title="Update the state." alt="" coords="960,208,1119,235"/>
+<area shape="rect" href="classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="959,259,1120,285"/>
+<area shape="rect" href="classAPI_1_1UVCState.html#a4fbd4f9698d98160e313632cf47c6f18" title="Update the state." alt="" coords="962,309,1117,336"/>
+<area shape="rect" href="classAPI_1_1MaskState.html#a8a59a59de7a450dfaa9e0ce04536bde1" title="Set the initial state." alt="" coords="755,171,893,197"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="737,222,911,263"/>
+<area shape="rect" href="classAPI_1_1HomeState.html#a8d034ff34c8858a7ae82ab5d5dcff6d3" title="Set the initial state." alt="" coords="754,288,894,315"/>
+<area shape="rect" href="test_2io__home_8cpp.html#abed9caf36046c2742ce7b05c53c19bb5" title="Test the io::IsUserHome_Runnable non&#45;threaded functionality." alt="" coords="495,200,689,227"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="505,251,679,293"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="273,251,447,293"/>
+<area shape="rect" href="classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8" title=" " alt="" coords="104,233,225,260"/>
+<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="139,284,190,311"/>
+<area shape="rect" href="app_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,259,56,285"/>
+<area shape="rect" href="classAPI_1_1UVCState.html#affc033f4d7dd1a17c0e7b1c0d38adc87" title="Set the initial state." alt="" coords="757,339,891,365"/>
 </map>
 </div>
 

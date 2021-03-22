@@ -1,0 +1,5 @@
+<map id="io::Door_Helper::door_state" name="io::Door_Helper::door_state">
+<area shape="rect" id="node1" title="Get the current door state." alt="" coords="236,35,377,76"/>
+<area shape="rect" id="node2" href="$classio_1_1Door__Runnable.html#ac2b994a8a9b5a777451c3025cdea7aab" title="Handles the logic." alt="" coords="31,5,163,47"/>
+<area shape="rect" id="node3" href="$classio_1_1UVC__Runnable.html#ae3a498da16eb4a4dd8a4693d58fabf7a" title="Handles the logic." alt="" coords="5,71,188,98"/>
+</map>

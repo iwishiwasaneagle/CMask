@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pollcount_136',['pollCount',['../classio_1_1NFC__Runnable.html#a9c8bb4e6b817345cf661e014e9ef716c',1,'io::NFC_Runnable']]],
-  ['pollperiod_137',['pollPeriod',['../classio_1_1NFC__Runnable.html#a8b725f9d0e95f2f9f68583bc634ac7cd',1,'io::NFC_Runnable']]]
+  ['nmmodulations_156',['nmModulations',['../classio_1_1NFC__Runnable.html#a7b3c47862b1ef9bd6993993c063ac998',1,'io::NFC_Runnable']]]
 ];

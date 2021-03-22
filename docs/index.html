@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Boxofhope: io_server</title>
+<title>Boxofhope: BoxOfHope io_server</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,11 +82,19 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">io_server </div>  </div>
+<div class="title">BoxOfHope io_server </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_io_server_README"></a> Welcome to the README for <code>io_server</code>.</p>
-<p>// TODO: Add readme lol </p>
+<div class="textblock"><p><a class="anchor" id="md_io_server_README"></a> <b>To build <code>io_server</code>:</b></p>
+<p>The <code>wiringPi</code> dependecy only runs on Raspberry Pi, therefore if you're building this on a non-RPi platform, please install <a href="https://github.com/iwishiwasaneagle/wiringPi-mock">wiringPi-mock</a>. Otherwise, please install <a href="https://github.com/iwishiwasaneagle/wiringPi">wiringPi</a> from <code>iwishiwasaneagle</code> until <a href="https://github.com/WiringPi/WiringPi/pull/102">wiringPi#102</a> is closed..</p>
+<div class="fragment"><div class="line">sudo apt-get install gcc cmake libboost-all-dev libnfc-dev # For ubuntu, use whatever package manager your system needs.</div>
+<div class="line"> </div>
+<div class="line"># io_server</div>
+<div class="line">git clone https://github.com/iwishiwasaneagle/boxofhope</div>
+<div class="line">cd io_server</div>
+<div class="line">cmake -S . -B build</div>
+<div class="line">cmake --build build</div>
+</div><!-- fragment --><p>The <code>io_server</code> binary will be located in the automatically generated <code>build</code> folder. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
