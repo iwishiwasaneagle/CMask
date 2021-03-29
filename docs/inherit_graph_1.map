@@ -1,5 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structAPI_1_1State.html" title=" " alt="" coords="5,31,132,57"/>
-<area shape="rect" id="node2" href="$classAPI_1_1HomeState.html" title="Class to access the /state/user&#45;home endpoint." alt="" coords="180,5,296,32"/>
-<area shape="rect" id="node3" href="$classAPI_1_1MaskState.html" title="Class to access the /state/present&#45;mask endpoint." alt="" coords="181,56,295,83"/>
+<area shape="rect" id="node1" href="$structAPI_1_1State.html" title=" " alt="" coords="5,56,132,83"/>
+<area shape="rect" id="node2" href="$classAPI_1_1DoorState.html" title="Class to access the Door endpoint." alt="" coords="184,5,292,32"/>
+<area shape="rect" id="node3" href="$classAPI_1_1HomeState.html" title="Class to access the UserHome endpoint." alt="" coords="180,56,296,83"/>
+<area shape="rect" id="node4" href="$classAPI_1_1MaskState.html" title="Class to access the mask endpoint." alt="" coords="181,107,295,133"/>
 </map>

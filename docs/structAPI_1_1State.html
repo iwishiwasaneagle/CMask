@@ -101,12 +101,12 @@ Collaboration diagram for API::State&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3d3af1cd9c60d9834d05893c54583e02"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAPI_1_1State.html#a3d3af1cd9c60d9834d05893c54583e02">update</a> (T state)</td></tr>
-<tr class="separator:a3d3af1cd9c60d9834d05893c54583e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae26da4092809e854596a5fa863e0fe65"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAPI_1_1State.html#ae26da4092809e854596a5fa863e0fe65">set</a> (T state)</td></tr>
-<tr class="separator:ae26da4092809e854596a5fa863e0fe65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4ca4cd963d9cff76c3daacebfe5bcfe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAPI_1_1State.html#aa4ca4cd963d9cff76c3daacebfe5bcfe">get</a> (void)</td></tr>
-<tr class="separator:aa4ca4cd963d9cff76c3daacebfe5bcfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11241fae13e8db4dbeaa90aa2888c477"><td class="memItemLeft" align="right" valign="top">virtual T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAPI_1_1State.html#a11241fae13e8db4dbeaa90aa2888c477">update</a> (T state)</td></tr>
+<tr class="separator:a11241fae13e8db4dbeaa90aa2888c477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aae04f7b27b8d528235092883e19c85"><td class="memItemLeft" align="right" valign="top">virtual T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAPI_1_1State.html#a6aae04f7b27b8d528235092883e19c85">set</a> (T state)</td></tr>
+<tr class="separator:a6aae04f7b27b8d528235092883e19c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cde7ff7c9a9e4c03343bdf5cbe2e6b4"><td class="memItemLeft" align="right" valign="top">virtual T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAPI_1_1State.html#a9cde7ff7c9a9e4c03343bdf5cbe2e6b4">get</a> (void)</td></tr>
+<tr class="separator:a9cde7ff7c9a9e4c03343bdf5cbe2e6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
@@ -114,8 +114,8 @@ struct API::State&lt; T &gt;</h3>
 
 <p>Template struct to allow a consistent <a class="el" href="classAPI.html">API</a> interface to be made. All states are single value, and therefore T can be bool, int, etc. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa4ca4cd963d9cff76c3daacebfe5bcfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4ca4cd963d9cff76c3daacebfe5bcfe">&#9670;&nbsp;</a></span>get()</h2>
+<a id="a9cde7ff7c9a9e4c03343bdf5cbe2e6b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cde7ff7c9a9e4c03343bdf5cbe2e6b4">&#9670;&nbsp;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +126,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> <a class="el" href="structAPI_1_1State.html">API::State</a>&lt; T &gt;::get </td>
+          <td class="memname">virtual T <a class="el" href="structAPI_1_1State.html">API::State</a>&lt; T &gt;::get </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -140,12 +140,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classAPI_1_1UVCState.html#ac9bb4dd678b621063e864939a5613a60">API::UVCState</a>, <a class="el" href="classAPI_1_1MaskState.html#a5dfcb55adae6eb4498be56db868de2eb">API::MaskState</a>, and <a class="el" href="classAPI_1_1HomeState.html#ad4074236bbf2d5297651146ac823d40f">API::HomeState</a>.</p>
+<p>Reimplemented in <a class="el" href="classAPI_1_1DoorState.html#a66e3b51269a55069e759fd68ec516f85">API::DoorState</a>, <a class="el" href="classAPI_1_1UVCState.html#a8946025635f601587d35f20aaa3d424d">API::UVCState</a>, <a class="el" href="classAPI_1_1MaskState.html#a899e5da52dbec12533855033259381f8">API::MaskState</a>, and <a class="el" href="classAPI_1_1HomeState.html#ab056fe9034413a6fc4afbea27c60fd70">API::HomeState</a>.</p>
 
 </div>
 </div>
-<a id="ae26da4092809e854596a5fa863e0fe65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae26da4092809e854596a5fa863e0fe65">&#9670;&nbsp;</a></span>set()</h2>
+<a id="a6aae04f7b27b8d528235092883e19c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aae04f7b27b8d528235092883e19c85">&#9670;&nbsp;</a></span>set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,7 +156,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> <a class="el" href="structAPI_1_1State.html">API::State</a>&lt; T &gt;::set </td>
+          <td class="memname">virtual T <a class="el" href="structAPI_1_1State.html">API::State</a>&lt; T &gt;::set </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
@@ -170,12 +170,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classAPI_1_1UVCState.html#affc033f4d7dd1a17c0e7b1c0d38adc87">API::UVCState</a>, <a class="el" href="classAPI_1_1HomeState.html#a8d034ff34c8858a7ae82ab5d5dcff6d3">API::HomeState</a>, and <a class="el" href="classAPI_1_1MaskState.html#a8a59a59de7a450dfaa9e0ce04536bde1">API::MaskState</a>.</p>
+<p>Reimplemented in <a class="el" href="classAPI_1_1UVCState.html#a41274d45eaade494d29bb47e1133fff6">API::UVCState</a>, <a class="el" href="classAPI_1_1HomeState.html#a0738b69e6e23d56b573bd25de44a30e1">API::HomeState</a>, <a class="el" href="classAPI_1_1MaskState.html#a4769cda7b76e062b259660707127a729">API::MaskState</a>, and <a class="el" href="classAPI_1_1DoorState.html#a8fc80611bd2a96ace51bd406ef8e67e3">API::DoorState</a>.</p>
 
 </div>
 </div>
-<a id="a3d3af1cd9c60d9834d05893c54583e02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d3af1cd9c60d9834d05893c54583e02">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a11241fae13e8db4dbeaa90aa2888c477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11241fae13e8db4dbeaa90aa2888c477">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +186,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="api_8h.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> <a class="el" href="structAPI_1_1State.html">API::State</a>&lt; T &gt;::update </td>
+          <td class="memname">virtual T <a class="el" href="structAPI_1_1State.html">API::State</a>&lt; T &gt;::update </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
@@ -200,7 +200,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classAPI_1_1UVCState.html#a4fbd4f9698d98160e313632cf47c6f18">API::UVCState</a>, <a class="el" href="classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51">API::HomeState</a>, and <a class="el" href="classAPI_1_1MaskState.html#a8ea875c5a140686367c8de2fb36557a6">API::MaskState</a>.</p>
+<p>Reimplemented in <a class="el" href="classAPI_1_1UVCState.html#abfa82890c86346aa1c86faaad3a14184">API::UVCState</a>, <a class="el" href="classAPI_1_1HomeState.html#a64ea3e7b11dc638237fd59b5c83ab8a7">API::HomeState</a>, <a class="el" href="classAPI_1_1MaskState.html#ad90c61dbd4a1e05e98e8349b4935d7a4">API::MaskState</a>, and <a class="el" href="classAPI_1_1DoorState.html#a61978a95b3eaf314048d09cfa3584e58">API::DoorState</a>.</p>
 
 </div>
 </div>

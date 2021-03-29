@@ -1,4 +1,4 @@
 <map id="API::UVCState" name="API::UVCState">
-<area shape="rect" id="node1" title="Class to access the /state/uvc endpoint." alt="" coords="9,160,119,267"/>
+<area shape="rect" id="node1" title="Class to access the uvc endpoint." alt="" coords="9,160,119,267"/>
 <area shape="rect" id="node2" href="$structAPI_1_1State.html" title=" " alt="" coords="5,5,123,112"/>
 </map>

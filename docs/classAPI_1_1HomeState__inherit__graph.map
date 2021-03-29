@@ -1,4 +1,4 @@
 <map id="API::HomeState" name="API::HomeState">
-<area shape="rect" id="node1" title="Class to access the /state/user&#45;home endpoint." alt="" coords="11,160,127,267"/>
+<area shape="rect" id="node1" title="Class to access the UserHome endpoint." alt="" coords="11,160,127,267"/>
 <area shape="rect" id="node2" href="$structAPI_1_1State.html" title=" " alt="" coords="5,5,132,112"/>
 </map>

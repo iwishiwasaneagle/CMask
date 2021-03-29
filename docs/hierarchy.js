@@ -12,6 +12,7 @@ var hierarchy =
     [ "io::LCD_Runnable", "classio_1_1LCD__Runnable.html", null ],
     [ "API::State< T >", "structAPI_1_1State.html", null ],
     [ "API::State< bool >", "structAPI_1_1State.html", [
+      [ "API::DoorState", "classAPI_1_1DoorState.html", null ],
       [ "API::HomeState", "classAPI_1_1HomeState.html", null ],
       [ "API::MaskState", "classAPI_1_1MaskState.html", null ]
     ] ],

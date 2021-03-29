@@ -1,6 +1,6 @@
 var structAPI_1_1State =
 [
-    [ "get", "structAPI_1_1State.html#aa4ca4cd963d9cff76c3daacebfe5bcfe", null ],
-    [ "set", "structAPI_1_1State.html#ae26da4092809e854596a5fa863e0fe65", null ],
-    [ "update", "structAPI_1_1State.html#a3d3af1cd9c60d9834d05893c54583e02", null ]
+    [ "get", "structAPI_1_1State.html#a9cde7ff7c9a9e4c03343bdf5cbe2e6b4", null ],
+    [ "set", "structAPI_1_1State.html#a6aae04f7b27b8d528235092883e19c85", null ],
+    [ "update", "structAPI_1_1State.html#a11241fae13e8db4dbeaa90aa2888c477", null ]
 ];

@@ -1,0 +1,5 @@
+<map id="API::DoorState::update" name="API::DoorState::update">
+<area shape="rect" id="node1" title="Update the state." alt="" coords="185,42,339,69"/>
+<area shape="rect" id="node2" href="$classio_1_1Door__Runnable.html#ac2b994a8a9b5a777451c3025cdea7aab" title="Handles the logic." alt="" coords="5,5,137,47"/>
+<area shape="rect" id="node3" href="$classAPI_1_1DoorState.html#a8fc80611bd2a96ace51bd406ef8e67e3" title="Set the initial state." alt="" coords="5,71,137,98"/>
+</map>

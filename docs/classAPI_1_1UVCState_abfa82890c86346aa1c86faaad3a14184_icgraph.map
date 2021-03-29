@@ -1,0 +1,5 @@
+<map id="API::UVCState::update" name="API::UVCState::update">
+<area shape="rect" id="node1" title="Update the state." alt="" coords="187,42,341,69"/>
+<area shape="rect" id="node2" href="$classio_1_1Door__Runnable.html#ac2b994a8a9b5a777451c3025cdea7aab" title="Handles the logic." alt="" coords="6,5,138,47"/>
+<area shape="rect" id="node3" href="$classAPI_1_1UVCState.html#a41274d45eaade494d29bb47e1133fff6" title="Set the initial state." alt="" coords="5,71,139,98"/>
+</map>

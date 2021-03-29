@@ -1,4 +1,4 @@
 <map id="API::MaskState" name="API::MaskState">
-<area shape="rect" id="node1" title="Class to access the /state/present&#45;mask endpoint." alt="" coords="12,160,125,267"/>
+<area shape="rect" id="node1" title="Class to access the mask endpoint." alt="" coords="12,160,125,267"/>
 <area shape="rect" id="node2" href="$structAPI_1_1State.html" title=" " alt="" coords="5,5,132,112"/>
 </map>

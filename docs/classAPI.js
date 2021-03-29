@@ -1,5 +1,6 @@
 var classAPI =
 [
+    [ "DoorState", "classAPI_1_1DoorState.html", "classAPI_1_1DoorState" ],
     [ "HomeState", "classAPI_1_1HomeState.html", "classAPI_1_1HomeState" ],
     [ "MaskState", "classAPI_1_1MaskState.html", "classAPI_1_1MaskState" ],
     [ "State", "structAPI_1_1State.html", "structAPI_1_1State" ],

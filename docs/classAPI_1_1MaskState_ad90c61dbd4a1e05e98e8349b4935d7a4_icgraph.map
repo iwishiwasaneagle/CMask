@@ -1,0 +1,5 @@
+<map id="API::MaskState::update" name="API::MaskState::update">
+<area shape="rect" id="node1" title="Update the state." alt="" coords="191,42,349,69"/>
+<area shape="rect" id="node2" href="$classio_1_1Door__Runnable.html#ac2b994a8a9b5a777451c3025cdea7aab" title="Handles the logic." alt="" coords="8,5,140,47"/>
+<area shape="rect" id="node3" href="$classAPI_1_1MaskState.html#a4769cda7b76e062b259660707127a729" title="Set the initial state." alt="" coords="5,71,143,98"/>
+</map>

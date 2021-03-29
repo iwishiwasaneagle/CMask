@@ -9,7 +9,7 @@
 <area shape="rect" id="node6" href="$classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="396,122,569,163"/>
 <area shape="rect" id="node7" href="$classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="617,89,791,130"/>
 <area shape="rect" id="node11" href="$classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="617,154,791,195"/>
-<area shape="rect" id="node8" href="$classAPI_1_1HomeState.html#af16b5d6ebc1caef121ea64ccd0963e51" title="Update the state." alt="" coords="839,96,1000,123"/>
+<area shape="rect" id="node8" href="$classAPI_1_1HomeState.html#a64ea3e7b11dc638237fd59b5c83ab8a7" title="Update the state." alt="" coords="839,96,1000,123"/>
 <area shape="rect" id="node9" href="$classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="1048,96,1151,123"/>
 <area shape="rect" id="node10" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1199,96,1353,123"/>
 </map>
