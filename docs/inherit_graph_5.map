@@ -1,7 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structio_1_1GenericRunnable.html" title=" " alt="" coords="5,81,143,108"/>
-<area shape="rect" id="node2" href="$classio_1_1Door__Runnable.html" title=" " alt="" coords="214,5,341,32"/>
-<area shape="rect" id="node3" href="$classio_1_1IsUserHome__Runnable.html" title=" " alt="" coords="191,56,364,83"/>
-<area shape="rect" id="node4" href="$classio_1_1NFC__Runnable.html" title=" " alt="" coords="214,107,341,133"/>
-<area shape="rect" id="node5" href="$classio_1_1UVC__Runnable.html" title=" " alt="" coords="214,157,341,184"/>
+<area shape="rect" id="node1" href="$structio_1_1GenericRunnable.html" title="Generic runnable for other runnables to extend." alt="" coords="5,81,143,108"/>
+<area shape="rect" id="node2" href="$classio_1_1Door__Runnable.html" title="Door runnable to update server with door state, and to trigger UVC." alt="" coords="214,5,341,32"/>
+<area shape="rect" id="node3" href="$classio_1_1IsUserHome__Runnable.html" title="Runnable class to check if a user with IP ::Home_DEVICE_IP is home." alt="" coords="191,56,364,83"/>
+<area shape="rect" id="node4" href="$classio_1_1NFC__Runnable.html" title="NFC Runnable class that sets up LibNFC on construct, and safely destroys it on destruct." alt="" coords="214,107,341,133"/>
+<area shape="rect" id="node5" href="$classio_1_1UVC__Runnable.html" title="UVC runnable class to encapsulate all things Uvc &#45;&gt; updating server, pulling data,..." alt="" coords="214,157,341,184"/>
 </map>

@@ -1,3 +1,3 @@
 <map id="io::Door_Helper" name="io::Door_Helper">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,180,97"/>
+<area shape="rect" id="node1" title="Generic helper class with static functions to ease development of door based functionality." alt="" coords="5,5,180,97"/>
 </map>

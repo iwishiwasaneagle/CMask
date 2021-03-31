@@ -2,4 +2,7 @@
 <area shape="rect" id="node1" title="Handles the logic." alt="" coords="5,46,188,73"/>
 <area shape="rect" id="node2" href="$classio_1_1Door__Helper.html#a88a3c0f2c8ffbc28be1aa103c628f75b" title="Wait for the door button to generate a signal." alt="" coords="236,5,400,47"/>
 <area shape="rect" id="node3" href="$classio_1_1Door__Helper.html#a414eef032211626d6c0b4a12fa5a58d2" title="Get the current door state." alt="" coords="247,71,389,112"/>
+<area shape="rect" id="node4" href="$classAPI_1_1DoorState.html#a61978a95b3eaf314048d09cfa3584e58" title="Update the state." alt="" coords="448,78,601,105"/>
+<area shape="rect" id="node5" href="$classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="649,78,752,105"/>
+<area shape="rect" id="node6" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="800,78,955,105"/>
 </map>

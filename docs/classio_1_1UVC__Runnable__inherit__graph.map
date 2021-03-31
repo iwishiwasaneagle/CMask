@@ -1,4 +1,4 @@
 <map id="io::UVC_Runnable" name="io::UVC_Runnable">
-<area shape="rect" id="node1" title=" " alt="" coords="5,160,143,355"/>
-<area shape="rect" id="node2" href="$structio_1_1GenericRunnable.html" title=" " alt="" coords="5,5,143,112"/>
+<area shape="rect" id="node1" title="UVC runnable class to encapsulate all things Uvc &#45;&gt; updating server, pulling data,..." alt="" coords="5,160,143,355"/>
+<area shape="rect" id="node2" href="$structio_1_1GenericRunnable.html" title="Generic runnable for other runnables to extend." alt="" coords="5,5,143,112"/>
 </map>

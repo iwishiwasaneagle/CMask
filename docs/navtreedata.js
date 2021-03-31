@@ -25,8 +25,20 @@
 var NAVTREE =
 [
   [ "Boxofhope", "index.html", [
-    [ "BoxOfHope io_server", "index.html", null ],
-    [ "ARCHITECTURE", "md_io_server_ARCHITECTURE.html", null ],
+    [ "BoxOfHope io_server", "index.html", [
+      [ "Build", "index.html#autotoc_md8", null ],
+      [ "Run", "index.html#autotoc_md9", null ]
+    ] ],
+    [ "Architecture", "md_io_server_ARCHITECTURE.html", [
+      [ "Bird's Eye View", "md_io_server_ARCHITECTURE.html#autotoc_md1", null ],
+      [ "In-depth", "md_io_server_ARCHITECTURE.html#autotoc_md2", [
+        [ "<tt>./apps</tt>", "md_io_server_ARCHITECTURE.html#autotoc_md3", null ],
+        [ "<tt>./include/utils</tt>", "md_io_server_ARCHITECTURE.html#autotoc_md4", null ],
+        [ "<tt>./include/io_server</tt>", "md_io_server_ARCHITECTURE.html#autotoc_md5", null ],
+        [ "<tt>./test</tt>", "md_io_server_ARCHITECTURE.html#autotoc_md6", null ]
+      ] ]
+    ] ],
+    [ "Test List", "test.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],

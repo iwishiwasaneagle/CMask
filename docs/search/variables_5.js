@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['pollcount_164',['pollCount',['../classio_1_1NFC__Runnable.html#a9c8bb4e6b817345cf661e014e9ef716c',1,'io::NFC_Runnable']]],
-  ['pollperiod_165',['pollPeriod',['../classio_1_1NFC__Runnable.html#a8b725f9d0e95f2f9f68583bc634ac7cd',1,'io::NFC_Runnable']]],
-  ['proxy_5furl_166',['PROXY_URL',['../api_8h.html#a257051987af5146ac25fba76f91c35a9',1,'api.h']]]
+  ['oneshotrunning_176',['oneShotRunning',['../classio_1_1NFC__Runnable.html#a50e5ffe74fc4cdd1f1c114d9c753646f',1,'io::NFC_Runnable']]]
 ];

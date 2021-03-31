@@ -1,4 +1,4 @@
-<map id="io::NFC_Runnable::waitForTag" name="io::NFC_Runnable::waitForTag">
-<area shape="rect" id="node1" title=" " alt="" coords="185,13,383,39"/>
+<map id="io::NFC_Runnable::oneShot" name="io::NFC_Runnable::oneShot">
+<area shape="rect" id="node1" title=" " alt="" coords="185,13,365,39"/>
 <area shape="rect" id="node2" href="$classio_1_1Door__Runnable.html#ac2b994a8a9b5a777451c3025cdea7aab" title="Handles the logic." alt="" coords="5,5,137,47"/>
 </map>

@@ -88,17 +88,20 @@ $(document).ready(function(){initNavTree('structio_1_1GenericRunnable.html','');
 </div><!--header-->
 <div class="contents">
 
+<p>Generic runnable for other runnables to extend.  
+ <a href="structio_1_1GenericRunnable.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="io__generic__runnable_8h_source.html">io_generic_runnable.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for io::GenericRunnable:</div>
 <div class="dyncontent">
 <div class="center"><img src="structio_1_1GenericRunnable__inherit__graph.png" border="0" usemap="#aio_1_1GenericRunnable_inherit__map" alt="Inheritance graph"/></div>
 <map name="aio_1_1GenericRunnable_inherit__map" id="aio_1_1GenericRunnable_inherit__map">
-<area shape="rect" title=" " alt="" coords="281,5,418,112"/>
-<area shape="rect" href="classio_1_1Door__Runnable.html" title=" " alt="" coords="5,175,141,340"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html" title=" " alt="" coords="166,160,349,355"/>
-<area shape="rect" href="classio_1_1NFC__Runnable.html" title=" " alt="" coords="373,167,509,347"/>
-<area shape="rect" href="classio_1_1UVC__Runnable.html" title=" " alt="" coords="534,160,671,355"/>
+<area shape="rect" title="Generic runnable for other runnables to extend." alt="" coords="281,5,418,112"/>
+<area shape="rect" href="classio_1_1Door__Runnable.html" title="Door runnable to update server with door state, and to trigger UVC." alt="" coords="5,204,141,384"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html" title="Runnable class to check if a user with IP ::Home_DEVICE_IP is home." alt="" coords="166,197,349,391"/>
+<area shape="rect" href="classio_1_1NFC__Runnable.html" title="NFC Runnable class that sets up LibNFC on construct, and safely destroys it on destruct." alt="" coords="373,160,509,428"/>
+<area shape="rect" href="classio_1_1UVC__Runnable.html" title="UVC runnable class to encapsulate all things Uvc &#45;&gt; updating server, pulling data,..." alt="" coords="534,197,671,391"/>
 </map>
 </div>
 <div class="dynheader">
@@ -106,7 +109,7 @@ Collaboration diagram for io::GenericRunnable:</div>
 <div class="dyncontent">
 <div class="center"><img src="structio_1_1GenericRunnable__coll__graph.png" border="0" usemap="#aio_1_1GenericRunnable_coll__map" alt="Collaboration graph"/></div>
 <map name="aio_1_1GenericRunnable_coll__map" id="aio_1_1GenericRunnable_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,143,112"/>
+<area shape="rect" title="Generic runnable for other runnables to extend." alt="" coords="5,5,143,112"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -119,7 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab056e827033d8b3ec07a24d2fd3d028a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio_1_1GenericRunnable.html#ab056e827033d8b3ec07a24d2fd3d028a">attach</a> (void)</td></tr>
 <tr class="separator:ab056e827033d8b3ec07a24d2fd3d028a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Generic runnable for other runnables to extend. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000003">Test:</a></b></dt><dd><a class="el" href="io__generic__runnable_8cpp.html">io_server/test/io_generic_runnable.cpp</a> </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab056e827033d8b3ec07a24d2fd3d028a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab056e827033d8b3ec07a24d2fd3d028a">&#9670;&nbsp;</a></span>attach()</h2>
 
@@ -145,6 +151,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classio_1_1UVC__Runnable.html#acf8b270e310ab705bf405b3912a9ada7">io::UVC_Runnable</a>, <a class="el" href="classio_1_1IsUserHome__Runnable.html#a95e3030e9c04940e2880e244389f0eed">io::IsUserHome_Runnable</a>, and <a class="el" href="classio_1_1Door__Runnable.html#a821aba7cd2f9f0e05e5775a2796edb18">io::Door_Runnable</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structio_1_1GenericRunnable_ab056e827033d8b3ec07a24d2fd3d028a_icgraph.png" border="0" usemap="#astructio_1_1GenericRunnable_ab056e827033d8b3ec07a24d2fd3d028a_icgraph" alt=""/></div>
+<map name="astructio_1_1GenericRunnable_ab056e827033d8b3ec07a24d2fd3d028a_icgraph" id="astructio_1_1GenericRunnable_ab056e827033d8b3ec07a24d2fd3d028a_icgraph">
+<area shape="rect" title=" " alt="" coords="248,5,385,47"/>
+<area shape="rect" href="io__generic__runnable_8cpp.html#a671004db4fc721e26f20f4f6cbe5f76f" title="Test the io::GenericRunnable." alt="" coords="5,13,200,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -173,6 +188,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classio_1_1UVC__Runnable.html#ad4c40b8f5054b54f1cfd07d89a0596b8">io::UVC_Runnable</a>, <a class="el" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894">io::IsUserHome_Runnable</a>, and <a class="el" href="classio_1_1Door__Runnable.html#aaea315b78f01f855b9913c2557ef0f6f">io::Door_Runnable</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structio_1_1GenericRunnable_a89512f8599fa04adaefe45b5a804fa0c_icgraph.png" border="0" usemap="#astructio_1_1GenericRunnable_a89512f8599fa04adaefe45b5a804fa0c_icgraph" alt=""/></div>
+<map name="astructio_1_1GenericRunnable_a89512f8599fa04adaefe45b5a804fa0c_icgraph" id="astructio_1_1GenericRunnable_a89512f8599fa04adaefe45b5a804fa0c_icgraph">
+<area shape="rect" title=" " alt="" coords="248,5,385,47"/>
+<area shape="rect" href="io__generic__runnable_8cpp.html#a671004db4fc721e26f20f4f6cbe5f76f" title="Test the io::GenericRunnable." alt="" coords="5,13,200,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -201,6 +225,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classio_1_1UVC__Runnable.html#af4d2720dca3d43d365e4b0455986f306">io::UVC_Runnable</a>, <a class="el" href="classio_1_1IsUserHome__Runnable.html#a4c5c3f0a220710e0df6228182e72fd7a">io::IsUserHome_Runnable</a>, and <a class="el" href="classio_1_1Door__Runnable.html#ada4dd35e7a8f2fe8c10cf0ebcfe015a9">io::Door_Runnable</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structio_1_1GenericRunnable_abeaa61a98fc6a716b9d7639f5fd47a35_icgraph.png" border="0" usemap="#astructio_1_1GenericRunnable_abeaa61a98fc6a716b9d7639f5fd47a35_icgraph" alt=""/></div>
+<map name="astructio_1_1GenericRunnable_abeaa61a98fc6a716b9d7639f5fd47a35_icgraph" id="astructio_1_1GenericRunnable_abeaa61a98fc6a716b9d7639f5fd47a35_icgraph">
+<area shape="rect" title=" " alt="" coords="248,5,385,47"/>
+<area shape="rect" href="io__generic__runnable_8cpp.html#a671004db4fc721e26f20f4f6cbe5f76f" title="Test the io::GenericRunnable." alt="" coords="5,13,200,39"/>
+</map>
+</div>
 
 </div>
 </div>

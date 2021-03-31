@@ -87,58 +87,58 @@ $(document).ready(function(){initNavTree('app_8cpp.html',''); initResizable(); }
 <div class="title">app.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;getopt.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;getopt.h&gt;</code><br />
-<code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
 <code>#include &lt;boost/asio.hpp&gt;</code><br />
 <code>#include &lt;boost/bind/bind.hpp&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;mainConfig.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="io__server_8h_source.html">io_server/io_server.h</a>&gt;</code><br />
+<code>#include &lt;mainConfig.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="api_8h_source.html">utils/api.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for app.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="app_8cpp__incl.png" border="0" usemap="#aio__server_2apps_2app_8cpp" alt=""/></div>
 <map name="aio__server_2apps_2app_8cpp" id="aio__server_2apps_2app_8cpp">
-<area shape="rect" title=" " alt="" coords="806,5,962,32"/>
-<area shape="rect" title=" " alt="" coords="448,229,520,256"/>
-<area shape="rect" title=" " alt="" coords="1692,229,1746,256"/>
-<area shape="rect" title=" " alt="" coords="622,80,690,107"/>
-<area shape="rect" title=" " alt="" coords="24,155,81,181"/>
-<area shape="rect" title=" " alt="" coords="106,155,156,181"/>
-<area shape="rect" title=" " alt="" coords="180,155,287,181"/>
-<area shape="rect" title=" " alt="" coords="312,155,446,181"/>
-<area shape="rect" title=" " alt="" coords="1035,80,1102,107"/>
-<area shape="rect" title=" " alt="" coords="1126,80,1189,107"/>
-<area shape="rect" title=" " alt="" coords="1214,80,1310,107"/>
-<area shape="rect" href="io__server_8h.html" title=" " alt="" coords="868,80,1010,107"/>
-<area shape="rect" href="api_8h.html" title=" " alt="" coords="2038,155,2115,181"/>
-<area shape="rect" title=" " alt="" coords="1616,155,1678,181"/>
-<area shape="rect" title=" " alt="" coords="1702,155,1829,181"/>
-<area shape="rect" title=" " alt="" coords="1770,229,1849,256"/>
-<area shape="rect" title=" " alt="" coords="1854,155,1912,181"/>
-<area shape="rect" title=" " alt="" coords="522,155,580,181"/>
-<area shape="rect" title=" " alt="" coords="604,155,732,181"/>
-<area shape="rect" title=" " alt="" coords="757,155,876,181"/>
-<area shape="rect" title=" " alt="" coords="900,155,978,181"/>
-<area shape="rect" href="io__generic__runnable_8h.html" title=" " alt="" coords="1003,155,1150,181"/>
-<area shape="rect" href="io__door_8h.html" title=" " alt="" coords="1174,155,1248,181"/>
-<area shape="rect" href="io__home_8h.html" title=" " alt="" coords="1273,155,1354,181"/>
-<area shape="rect" href="io__nfc_8h.html" title=" " alt="" coords="1379,155,1446,181"/>
-<area shape="rect" href="io__uvc_8h.html" title=" " alt="" coords="1470,155,1541,181"/>
-<area shape="rect" title=" " alt="" coords="1376,229,1448,256"/>
-<area shape="rect" title=" " alt="" coords="2288,229,2366,256"/>
-<area shape="rect" title=" " alt="" coords="2390,229,2456,256"/>
-<area shape="rect" title=" " alt="" coords="2480,229,2550,256"/>
-<area shape="rect" title=" " alt="" coords="2574,229,2643,256"/>
-<area shape="rect" title=" " alt="" coords="1874,229,1940,256"/>
-<area shape="rect" title=" " alt="" coords="1965,229,2020,256"/>
-<area shape="rect" title=" " alt="" coords="2044,229,2109,256"/>
-<area shape="rect" title=" " alt="" coords="2132,229,2263,256"/>
+<area shape="rect" title=" " alt="" coords="396,5,552,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,73,107"/>
+<area shape="rect" title=" " alt="" coords="1563,229,1635,256"/>
+<area shape="rect" title=" " alt="" coords="1660,229,1715,256"/>
+<area shape="rect" title=" " alt="" coords="199,155,250,181"/>
+<area shape="rect" title=" " alt="" coords="274,155,381,181"/>
+<area shape="rect" title=" " alt="" coords="405,155,540,181"/>
+<area shape="rect" title=" " alt="" coords="564,155,621,181"/>
+<area shape="rect" title=" " alt="" coords="537,80,603,107"/>
+<area shape="rect" title=" " alt="" coords="628,80,691,107"/>
+<area shape="rect" href="io__server_8h.html" title=" " alt="" coords="1232,80,1375,107"/>
+<area shape="rect" href="api_8h.html" title=" " alt="" coords="2162,155,2239,181"/>
+<area shape="rect" title=" " alt="" coords="1450,80,1546,107"/>
+<area shape="rect" title=" " alt="" coords="1709,155,1770,181"/>
+<area shape="rect" title=" " alt="" coords="1795,155,1921,181"/>
+<area shape="rect" title=" " alt="" coords="1817,229,1896,256"/>
+<area shape="rect" title=" " alt="" coords="1997,155,2055,181"/>
+<area shape="rect" title=" " alt="" coords="2079,155,2138,181"/>
+<area shape="rect" title=" " alt="" coords="646,155,774,181"/>
+<area shape="rect" title=" " alt="" coords="799,155,917,181"/>
+<area shape="rect" title=" " alt="" coords="941,155,1020,181"/>
+<area shape="rect" href="io__generic__runnable_8h.html" title=" " alt="" coords="1045,155,1191,181"/>
+<area shape="rect" href="io__door_8h.html" title=" " alt="" coords="1215,155,1290,181"/>
+<area shape="rect" href="io__home_8h.html" title=" " alt="" coords="1315,155,1396,181"/>
+<area shape="rect" href="io__nfc_8h.html" title=" " alt="" coords="1421,155,1487,181"/>
+<area shape="rect" href="io__uvc_8h.html" title=" " alt="" coords="1512,155,1583,181"/>
+<area shape="rect" title=" " alt="" coords="1418,229,1490,256"/>
+<area shape="rect" title=" " alt="" coords="2351,229,2416,256"/>
+<area shape="rect" title=" " alt="" coords="2440,229,2495,256"/>
+<area shape="rect" title=" " alt="" coords="2519,229,2597,256"/>
+<area shape="rect" title=" " alt="" coords="2622,229,2689,256"/>
+<area shape="rect" title=" " alt="" coords="1920,229,1985,256"/>
+<area shape="rect" title=" " alt="" coords="2010,229,2079,256"/>
+<area shape="rect" title=" " alt="" coords="2103,229,2173,256"/>
+<area shape="rect" title=" " alt="" coords="2197,229,2327,256"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -183,26 +183,25 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="app_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.png" border="0" usemap="#aapp_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph" alt=""/></div>
 <map name="aapp_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph" id="aapp_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph">
-<area shape="rect" title=" " alt="" coords="5,276,56,303"/>
-<area shape="rect" href="classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8" title=" " alt="" coords="104,152,225,179"/>
-<area shape="rect" href="app_8cpp.html#a78bf8646c074be1959943f73bd7458c0" title="Print CLI usage for main." alt="" coords="117,327,212,353"/>
-<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="139,276,190,303"/>
-<area shape="rect" href="io__server_8cpp.html#a8ee3282bc313e547dbbb8d4f4010db61" title=" " alt="" coords="309,5,411,32"/>
+<area shape="rect" title=" " alt="" coords="5,224,56,251"/>
+<area shape="rect" href="classio_1_1IO__Server.html#a1e18efa4049b7e0dda522899c9f967b8" title=" " alt="" coords="104,129,225,156"/>
+<area shape="rect" href="app_8cpp.html#a78bf8646c074be1959943f73bd7458c0" title="Print CLI usage for main." alt="" coords="117,275,212,301"/>
+<area shape="rect" href="app_8cpp.html#a0040b31a2648820e75882b52c2790efa" title=" " alt="" coords="139,224,190,251"/>
 <area shape="rect" href="classio_1_1Door__Runnable.html#aaea315b78f01f855b9913c2557ef0f6f" title="Start the threaded Door_Runnable." alt="" coords="294,57,426,98"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="273,174,447,215"/>
-<area shape="rect" href="classio_1_1Door__Runnable.html#ada4dd35e7a8f2fe8c10cf0ebcfe015a9" title="Stop the thread via a interrupt point within the thread." alt="" coords="281,123,439,149"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a4c5c3f0a220710e0df6228182e72fd7a" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="273,239,447,281"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a1afc0152e90e89a45808ffc175bac894" title="Start the threaded periodic call to IsUserHome_Runnable::isUserHome." alt="" coords="273,187,447,229"/>
+<area shape="rect" href="classio_1_1Door__Runnable.html#ada4dd35e7a8f2fe8c10cf0ebcfe015a9" title="Stop the thread via a interrupt point within the thread." alt="" coords="281,5,439,32"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a4c5c3f0a220710e0df6228182e72fd7a" title="Stop the periodic thread via a interrupt point within the thread." alt="" coords="273,122,447,163"/>
 <area shape="rect" href="classio_1_1Door__Runnable.html#a76e63232ff1c659d1fea899221b09256" title="Runs the thread via io::Door_Runnable::runnable." alt="" coords="515,57,647,98"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="495,174,668,215"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="716,142,889,183"/>
-<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="716,207,889,249"/>
-<area shape="rect" href="classAPI_1_1HomeState.html#a64ea3e7b11dc638237fd59b5c83ab8a7" title="Update the state." alt="" coords="937,149,1099,176"/>
-<area shape="rect" href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="1147,149,1249,176"/>
-<area shape="rect" href="classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1297,149,1452,176"/>
-<area shape="rect" href="classio_1_1UVC__Runnable.html#acf8b270e310ab705bf405b3912a9ada7" title="Attach to the thread until it finishes. This BLOCKS the thread that it is run from." alt="" coords="275,305,445,332"/>
-<area shape="rect" href="classio_1_1UVC__Runnable.html#ad4c40b8f5054b54f1cfd07d89a0596b8" title="Start the threaded UVC_Runnable." alt="" coords="281,356,439,383"/>
-<area shape="rect" href="classio_1_1UVC__Runnable.html#af4d2720dca3d43d365e4b0455986f306" title="Stop the thread via a interrupt point within the thread." alt="" coords="281,407,439,433"/>
-<area shape="rect" href="classio_1_1UVC__Runnable.html#af3072092aad9552667a232511cd99a60" title="Runs the thread via io::UVC_Runnable::runnable." alt="" coords="497,349,666,390"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a74611bcf4c62a15de7eae787cb080c85" title="Registers the boost::asio::steady_timer, boost::asio::io_context, etc. as required...." alt="" coords="495,187,668,229"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#aa0360424d1856c33f366f668daa1032e" title=" " alt="" coords="716,155,889,197"/>
+<area shape="rect" href="classio_1_1IsUserHome__Runnable.html#a61a21bff7c00aeebdea02653f2973bdc" title="Responsible for the boost::asio::stead_timer extending it&#39;s run time, thus creating a periodic timer." alt="" coords="716,221,889,262"/>
+<area shape="rect" href="classAPI_1_1HomeState.html#a64ea3e7b11dc638237fd59b5c83ab8a7" title="Update the state." alt="" coords="937,163,1099,189"/>
+<area shape="rect" href="classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="1147,163,1249,189"/>
+<area shape="rect" href="classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1297,163,1452,189"/>
+<area shape="rect" href="classio_1_1UVC__Runnable.html#acf8b270e310ab705bf405b3912a9ada7" title="Attach to the thread until it finishes. This BLOCKS the thread that it is run from." alt="" coords="275,253,445,280"/>
+<area shape="rect" href="classio_1_1UVC__Runnable.html#ad4c40b8f5054b54f1cfd07d89a0596b8" title="Start the threaded UVC_Runnable." alt="" coords="281,304,439,331"/>
+<area shape="rect" href="classio_1_1UVC__Runnable.html#af4d2720dca3d43d365e4b0455986f306" title="Stop the thread via a interrupt point within the thread." alt="" coords="281,355,439,381"/>
+<area shape="rect" href="classio_1_1UVC__Runnable.html#af3072092aad9552667a232511cd99a60" title="Runs the thread via io::UVC_Runnable::runnable." alt="" coords="497,297,666,338"/>
 </map>
 </div>
 

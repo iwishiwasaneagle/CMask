@@ -5,10 +5,10 @@ var indexSectionsWithContent =
   2: "i",
   3: "airu",
   4: "abcdgilmnorstuw~",
-  5: "achinprst",
+  5: "achinoprst",
   6: "j",
   7: "abdpu",
-  8: "ab"
+  8: "abt"
 };
 
 var indexSectionNames =

@@ -1,14 +1,16 @@
 <map id="io::Door_Runnable::runnable" name="io::Door_Runnable::runnable">
-<area shape="rect" id="node1" title="Handles the logic." alt="" coords="5,206,137,247"/>
-<area shape="rect" id="node2" href="$classio_1_1UVC__Runnable.html#acf8b270e310ab705bf405b3912a9ada7" title="Attach to the thread until it finishes. This BLOCKS the thread that it is run from." alt="" coords="199,5,369,32"/>
-<area shape="rect" id="node3" href="$classio_1_1Door__Helper.html#a88a3c0f2c8ffbc28be1aa103c628f75b" title="Wait for the door button to generate a signal." alt="" coords="202,57,366,98"/>
-<area shape="rect" id="node4" href="$classio_1_1Door__Helper.html#a414eef032211626d6c0b4a12fa5a58d2" title="Get the current door state." alt="" coords="213,122,355,163"/>
-<area shape="rect" id="node5" href="$classio_1_1UVC__Runnable.html#ad4c40b8f5054b54f1cfd07d89a0596b8" title="Start the threaded UVC_Runnable." alt="" coords="205,188,363,215"/>
-<area shape="rect" id="node7" href="$classAPI_1_1DoorState.html#a61978a95b3eaf314048d09cfa3584e58" title="Update the state." alt="" coords="207,239,361,265"/>
-<area shape="rect" id="node10" href="$classAPI_1_1MaskState.html#ad90c61dbd4a1e05e98e8349b4935d7a4" title="Update the state." alt="" coords="205,289,363,316"/>
-<area shape="rect" id="node11" href="$classAPI_1_1UVCState.html#abfa82890c86346aa1c86faaad3a14184" title="Update the state." alt="" coords="207,340,361,367"/>
-<area shape="rect" id="node12" href="$classio_1_1NFC__Runnable.html#a77164638cf62646ed5a9a052f7e6588f" title=" " alt="" coords="185,391,383,417"/>
-<area shape="rect" id="node6" href="$classio_1_1UVC__Runnable.html#af3072092aad9552667a232511cd99a60" title="Runs the thread via io::UVC_Runnable::runnable." alt="" coords="431,181,600,222"/>
-<area shape="rect" id="node8" href="$classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="464,289,567,316"/>
-<area shape="rect" id="node9" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="648,289,803,316"/>
+<area shape="rect" id="node1" title="Handles the logic." alt="" coords="5,217,137,258"/>
+<area shape="rect" id="node2" href="$classio_1_1UVC__Runnable.html#acf8b270e310ab705bf405b3912a9ada7" title="Attach to the thread until it finishes. This BLOCKS the thread that it is run from." alt="" coords="191,5,360,32"/>
+<area shape="rect" id="node3" href="$classio_1_1NFC__Runnable.html#a1c2ca4bab50e3f343aa72d9ce4719d8e" title=" " alt="" coords="191,57,359,98"/>
+<area shape="rect" id="node4" href="$classio_1_1Door__Helper.html#a88a3c0f2c8ffbc28be1aa103c628f75b" title="Wait for the door button to generate a signal." alt="" coords="193,122,357,163"/>
+<area shape="rect" id="node5" href="$classio_1_1Door__Helper.html#a414eef032211626d6c0b4a12fa5a58d2" title="Get the current door state." alt="" coords="205,187,346,229"/>
+<area shape="rect" id="node9" href="$classio_1_1NFC__Runnable.html#a40301333bb5487e0b0b5781e1644f928" title=" " alt="" coords="185,253,365,280"/>
+<area shape="rect" id="node10" href="$classio_1_1NFC__Runnable.html#ae64f3f7cea3e7798d47c067af92d510d" title=" " alt="" coords="413,283,611,309"/>
+<area shape="rect" id="node12" href="$classio_1_1UVC__Runnable.html#ad4c40b8f5054b54f1cfd07d89a0596b8" title="Start the threaded UVC_Runnable." alt="" coords="196,355,355,381"/>
+<area shape="rect" id="node14" href="$classAPI_1_1UVCState.html#abfa82890c86346aa1c86faaad3a14184" title="Update the state." alt="" coords="661,367,815,393"/>
+<area shape="rect" id="node6" href="$classAPI_1_1DoorState.html#a61978a95b3eaf314048d09cfa3584e58" title="Update the state." alt="" coords="661,221,815,248"/>
+<area shape="rect" id="node7" href="$classAPI.html#affc2655f85dc13294d6d34f3bb0016f4" title="Generic static function for API members to use for running HTTP requests." alt="" coords="865,283,968,309"/>
+<area shape="rect" id="node8" href="$classAPI.html#adb6e932b7b5d2e5dd33249ef601cb265" title="Callback for cURL CURLOPT_WRITEFUNCTION" alt="" coords="1016,283,1171,309"/>
+<area shape="rect" id="node11" href="$classAPI_1_1MaskState.html#ad90c61dbd4a1e05e98e8349b4935d7a4" title="Update the state." alt="" coords="659,283,817,309"/>
+<area shape="rect" id="node13" href="$classio_1_1UVC__Runnable.html#af3072092aad9552667a232511cd99a60" title="Runs the thread via io::UVC_Runnable::runnable." alt="" coords="427,339,597,381"/>
 </map>

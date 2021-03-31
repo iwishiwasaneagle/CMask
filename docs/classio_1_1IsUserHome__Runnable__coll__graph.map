@@ -1,6 +1,6 @@
 <map id="io::IsUserHome_Runnable" name="io::IsUserHome_Runnable">
-<area shape="rect" id="node1" title=" " alt="" coords="111,175,293,355"/>
-<area shape="rect" id="node2" href="$structio_1_1GenericRunnable.html" title=" " alt="" coords="5,5,143,112"/>
+<area shape="rect" id="node1" title="Runnable class to check if a user with IP ::Home_DEVICE_IP is home." alt="" coords="111,175,293,355"/>
+<area shape="rect" id="node2" href="$structio_1_1GenericRunnable.html" title="Generic runnable for other runnables to extend." alt="" coords="5,5,143,112"/>
 <area shape="rect" id="node3" title=" " alt="" coords="167,20,237,97"/>
 <area shape="rect" id="node4" title=" " alt="" coords="261,20,359,97"/>
 </map>

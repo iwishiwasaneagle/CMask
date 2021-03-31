@@ -85,7 +85,9 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="title">BoxOfHope io_server </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_io_server_README"></a> <b>To build <code>io_server</code>:</b></p>
+<div class="textblock"><p><a class="anchor" id="md_io_server_README"></a> </p>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Build</h1>
 <p>The <code>wiringPi</code> dependecy only runs on Raspberry Pi, therefore if you're building this on a non-RPi platform, please install <a href="https://github.com/iwishiwasaneagle/wiringPi-mock">wiringPi-mock</a>. Otherwise, please install <a href="https://github.com/iwishiwasaneagle/wiringPi">wiringPi</a> from <code>iwishiwasaneagle</code> until <a href="https://github.com/WiringPi/WiringPi/pull/102">wiringPi#102</a> is closed..</p>
 <div class="fragment"><div class="line">sudo apt-get install gcc cmake libboost-all-dev libnfc-dev # For ubuntu, use whatever package manager your system needs.</div>
 <div class="line"> </div>
@@ -94,8 +96,20 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="line">cd io_server</div>
 <div class="line">cmake -S . -B build</div>
 <div class="line">cmake --build build</div>
-</div><!-- fragment --><p>The <code>io_server</code> binary will be located in the automatically generated <code>build</code> folder. </p>
-</div></div><!-- PageDoc -->
+</div><!-- fragment --><p>The <code>io_server</code> binary will be located in the automatically generated <code>build</code> folder.</p>
+<h1><a class="anchor" id="autotoc_md9"></a>
+Run</h1>
+<p><code>io_server</code> has the following flags </p><div class="fragment"><div class="line">Welcome to IO_server (v1.2.0)</div>
+<div class="line"> </div>
+<div class="line">Usage:</div>
+<div class="line">   -h,--help                Print this message</div>
+<div class="line">   -t                       Run tests</div>
+<div class="line">   -r                       Run io_server</div>
+<div class="line">   -P,--proxy &lt;ip&gt;:&lt;port&gt;   HTTP proxy address</div>
+<div class="line">   -A,--api   &lt;ip&gt;:&lt;port&gt;   API address</div>
+<div class="line">   -U,--user  &lt;ip&gt;          Home device - the device used to check if the user is home</div>
+</div><!-- fragment --><p>An example usage of this would be </p><div class="fragment"><div class="line">sudo ./build/io_server -r --api http://&lt;API_IP:API_PORT&gt; --user &lt;DEVICE_IP&gt; --proxy http://&lt;PROXY_IP&gt;:&lt;PROXY_PORT&gt;</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

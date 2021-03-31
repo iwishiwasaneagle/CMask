@@ -1,7 +1,7 @@
 <map id="io::GenericRunnable" name="io::GenericRunnable">
-<area shape="rect" id="node1" title=" " alt="" coords="281,5,418,112"/>
-<area shape="rect" id="node2" href="$classio_1_1Door__Runnable.html" title=" " alt="" coords="5,175,141,340"/>
-<area shape="rect" id="node3" href="$classio_1_1IsUserHome__Runnable.html" title=" " alt="" coords="166,160,349,355"/>
-<area shape="rect" id="node4" href="$classio_1_1NFC__Runnable.html" title=" " alt="" coords="373,167,509,347"/>
-<area shape="rect" id="node5" href="$classio_1_1UVC__Runnable.html" title=" " alt="" coords="534,160,671,355"/>
+<area shape="rect" id="node1" title="Generic runnable for other runnables to extend." alt="" coords="281,5,418,112"/>
+<area shape="rect" id="node2" href="$classio_1_1Door__Runnable.html" title="Door runnable to update server with door state, and to trigger UVC." alt="" coords="5,204,141,384"/>
+<area shape="rect" id="node3" href="$classio_1_1IsUserHome__Runnable.html" title="Runnable class to check if a user with IP ::Home_DEVICE_IP is home." alt="" coords="166,197,349,391"/>
+<area shape="rect" id="node4" href="$classio_1_1NFC__Runnable.html" title="NFC Runnable class that sets up LibNFC on construct, and safely destroys it on destruct." alt="" coords="373,160,509,428"/>
+<area shape="rect" id="node5" href="$classio_1_1UVC__Runnable.html" title="UVC runnable class to encapsulate all things Uvc &#45;&gt; updating server, pulling data,..." alt="" coords="534,197,671,391"/>
 </map>

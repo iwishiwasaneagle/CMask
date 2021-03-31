@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Boxofhope: ARCHITECTURE</title>
+<title>Boxofhope: Architecture</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,10 +82,43 @@ $(document).ready(function(){initNavTree('md_io_server_ARCHITECTURE.html',''); i
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">ARCHITECTURE </div>  </div>
+<div class="title">Architecture </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><p>This document describes the high-level architecture of <code>boxofhope/io_server</code>. If you want to familiarize yourself with the code base, you are just in the right place!</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Bird's Eye View</h1>
+<p>On the highest level, <code>boxofhope/io_server</code> is a thing which runs in the background and gathers data and handles business logic for the <code>boxofhope</code> eco-system.</p>
+<p>It was created with the concept of event-driven logic in mind. However, some aspects of the codebase - such as <code>io_home</code> or <code>io_nfc</code> were impossible to implement in such a way. Therefore these use events and callbacks as much as possible.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+In-depth</h1>
+<p>In this section, all paths are relative to <code>boxofhope/io_server</code>.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+&lt;tt&gt;./apps&lt;/tt&gt;</h2>
+<p>This houses the front-facing logic for <code>io_server</code>. Handles CLI flags via <code>getopts</code> and sets global variables as defined. Also allows running of a test function <code>tests</code> which isn't really tests.</p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+&lt;tt&gt;./include/utils&lt;/tt&gt;</h2>
+<p>Here we hold the <code><a class="el" href="classAPI.html">API</a></code> utility worker. The directory is for any code that is useful across the whole project.</p>
+<p>The <code><a class="el" href="api_8h.html">api.h</a></code> does what it says: interacts with the <code>boxofhope/api</code>.</p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+&lt;tt&gt;./include/io_server&lt;/tt&gt;</h2>
+<p>All header files for the project are to be declared here and added manually to <code>CMakeLists.txt</code>. This allows an easy overview of what is happening within the system.</p>
+<ul>
+<li><code><a class="el" href="io__server_8h.html">io_server.h</a></code> houses the interactions between all the various runnables and enables one <code>run()</code> to be called from <code><a class="el" href="app_8cpp.html">apps/app.cpp</a></code> after all envs are set up.</li>
+<li><code><a class="el" href="io__generic__runnable_8h.html">io_generic_runnable.h</a></code> hold the <code><a class="el" href="structio_1_1GenericRunnable.html" title="Generic runnable for other runnables to extend.">io::GenericRunnable</a></code> virtual struct for other runnables to extend. Currently only acts as a template as each class redefines the <code>start</code>, <code>stop</code>, <code>attach</code>.</li>
+<li><code><a class="el" href="io__door_8h.html">io_door.h</a></code> holds 2 classes<ul>
+<li><code><a class="el" href="classio_1_1Door__Helper.html" title="Generic helper class with static functions to ease development of door based functionality.">io::Door_Helper</a></code> hold static classes that perform functions based on the door's state</li>
+<li><code><a class="el" href="classio_1_1Door__Runnable.html" title="Door runnable to update server with door state, and to trigger UVC.">io::Door_Runnable</a></code> houses the core logic behind the sanitation and masks. In <code><a class="el" href="classio_1_1Door__Runnable.html#ac2b994a8a9b5a777451c3025cdea7aab" title="Handles the logic.">io::Door_Runnable::runnable</a></code> we trigger the logic once the door has been opened AND closed.</li>
+</ul>
+</li>
+<li><code><a class="el" href="io__home_8h.html">io_home.h</a></code> is the periodic threaded runnable to test whether the user's specified device is home or not. If there is a event driven method for doing this, it will be implemented in the future. For now, the device IP is pinged every 20s and then the loop is slept for the remainder of the time to prevent resources from being used.</li>
+<li><code><a class="el" href="io__nfc_8h.html">io_nfc.h</a></code> the runnable that reads the masks state. Currently only tested with a <code>PN532 NFC Hat</code>. Has a <code>oneShot</code> utility to update the server with mask data. This is UNNECESSARY and only serves the purpose of logging for the webapp displays.</li>
+<li><code><a class="el" href="io__uvc_8h.html">io_uvc.h</a></code> handles the mask sanitation logic and interactions with the UVC <a class="el" href="classAPI.html">API</a> endpoint</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md6"></a>
+&lt;tt&gt;./test&lt;/tt&gt;</h2>
+<p>The core issue with testing in this project is the fact that everything relies on connected hardware. Therefore most testing is still done manually. However, some automated testing using GitHub Actions is done. For this we use <code>boost::test</code> and automatically add them to the <code>cmake</code> testing via some cmake magic (thanks stackoverflow). Any logic or behaviour that can be tested on an external system SHOULD be tested. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
