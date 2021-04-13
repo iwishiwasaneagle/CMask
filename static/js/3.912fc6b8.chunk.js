@@ -1,0 +1,2 @@
+(this["webpackJsonpboxofhope-gh-pages"]=this["webpackJsonpboxofhope-gh-pages"]||[]).push([[3],{112:function(t,h,s){"use strict";s.r(h);var e=s(1);h.default=function(t){var h=t.src,s=t.width,i=t.height;return Object(e.jsx)("img",{src:"/img/svg/".concat(h),alt:h,with:s,height:i})}}}]);
+//# sourceMappingURL=3.912fc6b8.chunk.js.map
